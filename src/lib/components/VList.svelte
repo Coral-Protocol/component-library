@@ -1,12 +1,16 @@
+<script lang="ts" module>
+	declare interface ListProps<T> extends VListProps<T> {
+		viewportClass?: string;
+	}
+</script>
+
 <script lang="ts" generics="T">
 	import { Virtualizer } from 'virtua/svelte';
 	import type { VListProps, VListHandle } from 'virtua/svelte';
 	import ScrollArea from './ui/scroll-area/scroll-area.svelte';
 	import { cn } from '$lib/utils.js';
 
-	interface Props extends VListProps<T> {
-		viewportClass?: string;
-	}
+	type Props = ListProps<T>;
 
 	let {
 		data,
