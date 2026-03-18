@@ -7,6 +7,7 @@ import SidebarLink from './SidebarLink.svelte';
 import TooltipLabel from './TooltipLabel.svelte';
 import TwostepButton from './TwostepButton.svelte';
 import VList from './VList.svelte';
+import Tour from './tour/index.js';
 
 export {
 	CodeBlock,
@@ -14,6 +15,7 @@ export {
 	CopyButton,
 	ModalCollapsible,
 	Pip,
+	Tour,
 	SidebarLink,
 	TooltipLabel,
 	TwostepButton,

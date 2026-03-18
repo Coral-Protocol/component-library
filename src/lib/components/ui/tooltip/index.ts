@@ -6,6 +6,8 @@ const Root = TooltipPrimitive.Root;
 const Provider = TooltipPrimitive.Provider;
 const Portal = TooltipPrimitive.Portal;
 
+export type _EnsureDts = true;
+
 export {
 	Root,
 	Trigger,

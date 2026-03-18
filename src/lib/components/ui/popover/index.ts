@@ -5,6 +5,8 @@ const Root = PopoverPrimitive.Root;
 const Close = PopoverPrimitive.Close;
 const Arrow = PopoverPrimitive.Arrow;
 
+export type _EnsureDts = true;
+
 export {
 	Root,
 	Content,
