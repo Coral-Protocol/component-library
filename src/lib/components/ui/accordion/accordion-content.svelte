@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Accordion as AccordionPrimitive } from 'bits-ui';
-	import { Separator } from '$lib/components/ui/separator/index.js';
-	import { cn, type WithoutChild } from '$lib/utils.js';
+	import { Separator } from '@coral-os/component-library/lib/components/ui/separator/index.js';
+	import { cn, type WithoutChild } from '@coral-os/component-library/lib/utils.js';
 
 	let {
 		ref = $bindable(null),

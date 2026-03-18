@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { cn } from "$lib/utils.js";
-	import { Textarea } from "$lib/components/ui/textarea/index.js";
+	import { cn } from "@coral-os/component-library/lib/utils.js";
+	import { Textarea } from "@coral-os/component-library/lib/components/ui/textarea/index.js";
 	import type { ComponentProps } from "svelte";
 
 	let {

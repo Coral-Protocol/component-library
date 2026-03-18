@@ -7,12 +7,12 @@
 </script>
 
 <script lang="ts">
-	import { cn } from '$lib/utils.js';
+	import { cn } from '@coral-os/component-library/lib/utils.js';
 
 	import IconX from 'phosphor-icons-svelte/IconXRegular.svelte';
 
-	import * as Popover from '$lib/components/ui/popover/index.js';
-	import { Button } from '$lib/components/ui/button/index.js';
+	import * as Popover from '@coral-os/component-library/lib/components/ui/popover/index.js';
+	import { Button } from '@coral-os/component-library/lib/components/ui/button/index.js';
 	import { Tooltip as TooltipPrimitive } from 'bits-ui';
 
 	import { fade } from 'svelte/transition';

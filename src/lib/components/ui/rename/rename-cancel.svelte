@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import { Button, type ButtonProps } from '$lib/components/ui/button/index.js';
+	import { Button, type ButtonProps } from '@coral-os/component-library/lib/components/ui/button/index.js';
 	import { useRenameCancel } from './rename.svelte.js';
 
 	const cancelState = useRenameCancel();

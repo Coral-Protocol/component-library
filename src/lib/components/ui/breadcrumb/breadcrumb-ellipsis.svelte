@@ -3,7 +3,7 @@
 	import EllipsisIcon from 'phosphor-icons-svelte/IconDotsThreeRegular.svelte';
 
 	import type { HTMLAttributes } from 'svelte/elements';
-	import { cn, type WithElementRef, type WithoutChildren } from '$lib/utils.js';
+	import { cn, type WithElementRef, type WithoutChildren } from '@coral-os/component-library/lib/utils.js';
 
 	let {
 		ref = $bindable(null),

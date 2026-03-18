@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { WithElementRef } from "$lib/utils.js";
+	import type { WithElementRef } from "@coral-os/component-library/lib/utils.js";
 	import type { HTMLAttributes } from "svelte/elements";
 
 	let {

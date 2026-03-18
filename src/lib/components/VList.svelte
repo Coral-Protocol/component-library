@@ -8,7 +8,7 @@
 	import { Virtualizer } from 'virtua/svelte';
 	import type { VListProps, VListHandle } from 'virtua/svelte';
 	import ScrollArea from './ui/scroll-area/scroll-area.svelte';
-	import { cn } from '$lib/utils.js';
+	import { cn } from '@coral-os/component-library/lib/utils.js';
 
 	type Props = ListProps<T>;
 

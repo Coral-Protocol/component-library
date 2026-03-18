@@ -1,9 +1,9 @@
 <script lang="ts">
-	import * as Tooltip from '$lib/components/ui/tooltip/index.js';
-	import { buttonVariants } from '$lib/components/ui/button/index.js';
-	import { UseClipboard } from '$lib/hooks/use-clipboard.svelte';
+	import * as Tooltip from '@coral-os/component-library/lib/components/ui/tooltip/index.js';
+	import { buttonVariants } from '@coral-os/component-library/lib/components/ui/button/index.js';
+	import { UseClipboard } from '@coral-os/component-library/lib/hooks/use-clipboard.svelte';
 
-	import { cn } from '$lib/utils.js';
+	import { cn } from '@coral-os/component-library/lib/utils.js';
 	import type { TooltipTriggerProps } from 'bits-ui';
 
 	import IconCopy from 'phosphor-icons-svelte/IconCopyRegular.svelte';

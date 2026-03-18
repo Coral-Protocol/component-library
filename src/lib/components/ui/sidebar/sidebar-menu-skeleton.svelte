@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { cn, type WithElementRef } from "$lib/utils.js";
-	import { Skeleton } from "$lib/components/ui/skeleton/index.js";
+	import { cn, type WithElementRef } from "@coral-os/component-library/lib/utils.js";
+	import { Skeleton } from "@coral-os/component-library/lib/components/ui/skeleton/index.js";
 	import type { HTMLAttributes } from "svelte/elements";
 
 	let {

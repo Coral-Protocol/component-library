@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { cn } from '$lib/utils.js';
+	import { cn } from '@coral-os/component-library/lib/utils.js';
 	import SpinnerIcon from 'phosphor-icons-svelte/IconSpinnerGapRegular.svelte';
 	import type { HTMLAttributes } from 'svelte/elements';
 

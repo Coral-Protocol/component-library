@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { cn } from "$lib/utils.js";
+	import { cn } from "@coral-os/component-library/lib/utils.js";
 	import { Popover as PopoverPrimitive } from "bits-ui";
 
 	let {

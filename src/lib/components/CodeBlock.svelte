@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Button from '$lib/components/ui/button/button.svelte';
-	import ScrollArea from '$lib/components/ui/scroll-area/scroll-area.svelte';
+	import Button from '@coral-os/component-library/lib/components/ui/button/button.svelte';
+	import ScrollArea from '@coral-os/component-library/lib/components/ui/scroll-area/scroll-area.svelte';
 
 	import type { ComponentProps } from 'svelte';
-	import { cn } from '$lib/utils.js';
+	import { cn } from '@coral-os/component-library/lib/utils.js';
 
 	import CopyIcon from 'phosphor-icons-svelte/IconCopyRegular.svelte';
 

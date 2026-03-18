@@ -1,6 +1,6 @@
 <script lang="ts" module>
 	import { tv, type VariantProps } from 'tailwind-variants';
-	import { cn, type WithoutChild } from '$lib/utils.js';
+	import { cn, type WithoutChild } from '@coral-os/component-library/lib/utils.js';
 	import { Accordion as AccordionPrimitive } from 'bits-ui';
 
 	export const accordionTriggerVariants = tv({

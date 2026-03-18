@@ -1,8 +1,8 @@
 <script lang="ts">
-	import * as Dialog from '$lib/components/ui/dialog/index.js';
+	import * as Dialog from '@coral-os/component-library/lib/components/ui/dialog/index.js';
 	import type { Snippet } from 'svelte';
-	import { Button, type ButtonProps } from '$lib/components/ui/button/index.js';
-	import { cn } from '$lib/utils.js';
+	import { Button, type ButtonProps } from '@coral-os/component-library/lib/components/ui/button/index.js';
+	import { cn } from '@coral-os/component-library/lib/utils.js';
 
 	const {
 		onclick,

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { Label } from "$lib/components/ui/label/index.js";
-	import { cn } from "$lib/utils.js";
+	import { Label } from "@coral-os/component-library/lib/components/ui/label/index.js";
+	import { cn } from "@coral-os/component-library/lib/utils.js";
 	import type { ComponentProps } from "svelte";
 
 	let {
