@@ -1,11 +1,10 @@
 import { Popover as PopoverPrimitive } from 'bits-ui';
 import Content from './popover-content.svelte';
 import Trigger from './popover-trigger.svelte';
+
 const Root = PopoverPrimitive.Root;
 const Close = PopoverPrimitive.Close;
-const Arrow = PopoverPrimitive.Arrow;
-
-export type _EnsureDts = true;
+const Arrow: typeof PopoverPrimitive.Arrow = PopoverPrimitive.Arrow;
 
 export {
 	Root,
