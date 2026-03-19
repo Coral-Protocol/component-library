@@ -1,6 +1,6 @@
 {
   "name": "@coral-os/component-library",
-  "version": "0.0.10",
+  "version": "0.1.0",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && npm run prepack",
@@ -22,6 +22,7 @@
   ],
   "sideEffects": false,
   "type": "module",
+  "svelte": "./src/lib/index.ts",
   "exports": {
     ".": {
       "types": "./src/lib/index.ts",
