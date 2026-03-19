@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { HTMLTableAttributes } from "svelte/elements";
-	import { cn, type WithElementRef } from "@coral-os/component-library/lib/utils.js";
+	import { cn, type WithElementRef } from "@coral-os/component-library/utils.js";
 
 	let {
 		ref = $bindable(null),

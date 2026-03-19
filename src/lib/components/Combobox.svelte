@@ -1,10 +1,10 @@
 <script lang="ts" generics="Value">
-	import * as Command from '@coral-os/component-library/lib/components/ui/command/index.js';
-	import * as Popover from '@coral-os/component-library/lib/components/ui/popover/index.js';
-	import { Button } from '@coral-os/component-library/lib/components/ui/button/index.js';
+	import * as Command from '@coral-os/component-library/components/ui/command/index.js';
+	import * as Popover from '@coral-os/component-library/components/ui/popover/index.js';
+	import { Button } from '@coral-os/component-library/components/ui/button/index.js';
 
 	import { tick, type ComponentProps, type Snippet } from 'svelte';
-	import { cn } from '@coral-os/component-library/lib/utils.js';
+	import { cn } from '@coral-os/component-library/utils.js';
 
 	import CheckIcon from 'phosphor-icons-svelte/IconCheckRegular.svelte';
 	import CaretUpDownIcon from 'phosphor-icons-svelte/IconCaretUpDownRegular.svelte';

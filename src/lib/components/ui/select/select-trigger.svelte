@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Select as SelectPrimitive } from 'bits-ui';
 	import ChevronDownIcon from '@lucide/svelte/icons/chevron-down';
-	import { cn, type WithoutChild } from '@coral-os/component-library/lib/utils.js';
+	import { cn, type WithoutChild } from '@coral-os/component-library/utils.js';
 
 	let {
 		ref = $bindable(null),

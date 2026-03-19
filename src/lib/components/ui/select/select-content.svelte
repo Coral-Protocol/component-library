@@ -2,7 +2,7 @@
 	import { Select as SelectPrimitive } from "bits-ui";
 	import SelectScrollUpButton from "./select-scroll-up-button.svelte";
 	import SelectScrollDownButton from "./select-scroll-down-button.svelte";
-	import { cn, type WithoutChild } from "@coral-os/component-library/lib/utils.js";
+	import { cn, type WithoutChild } from "@coral-os/component-library/utils.js";
 
 	let {
 		ref = $bindable(null),

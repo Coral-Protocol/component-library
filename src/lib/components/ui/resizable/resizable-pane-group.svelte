@@ -1,6 +1,6 @@
 <script lang="ts">
 	import * as ResizablePrimitive from "paneforge";
-	import { cn } from "@coral-os/component-library/lib/utils.js";
+	import { cn } from "@coral-os/component-library/utils.js";
 
 	let {
 		ref = $bindable(null),

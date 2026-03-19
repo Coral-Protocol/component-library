@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Command as CommandPrimitive } from "bits-ui";
 	import SearchIcon from "@lucide/svelte/icons/search";
-	import { cn } from "@coral-os/component-library/lib/utils.js";
+	import { cn } from "@coral-os/component-library/utils.js";
 
 	let {
 		ref = $bindable(null),

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import { Button, buttonVariants } from '@coral-os/component-library/lib/components/ui/button';
-	import * as Card from '@coral-os/component-library/lib/components/ui/card';
+	import { Button, buttonVariants } from '$ui/button';
+	import * as Card from '$ui/card';
 </script>
 
 <main class="mx-auto flex w-4/5 flex-col">

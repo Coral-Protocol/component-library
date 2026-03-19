@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { cn } from "@coral-os/component-library/lib/utils.js";
+	import { cn } from "@coral-os/component-library/utils.js";
 	import type { ComponentProps } from "svelte";
-	import { Input } from "@coral-os/component-library/lib/components/ui/input/index.js";
+	import { Input } from "@coral-os/component-library/components/ui/input/index.js";
 
 	let {
 		value = $bindable(),

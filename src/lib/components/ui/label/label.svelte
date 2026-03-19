@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Label as LabelPrimitive } from "bits-ui";
-	import { cn } from "@coral-os/component-library/lib/utils.js";
+	import { cn } from "@coral-os/component-library/utils.js";
 
 	let {
 		ref = $bindable(null),

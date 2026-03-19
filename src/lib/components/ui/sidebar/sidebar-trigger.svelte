@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { Button } from '@coral-os/component-library/lib/components/ui/button/index.js';
-	import { cn } from '@coral-os/component-library/lib/utils.js';
+	import { Button } from '@coral-os/component-library/components/ui/button/index.js';
+	import { cn } from '@coral-os/component-library/utils.js';
 	// import PanelLeftIcon from "@lucide/svelte/icons/panel-left";
 	import PanelLeftIcon from 'phosphor-icons-svelte/IconSidebarSimpleRegular.svelte';
 	import type { ComponentProps } from 'svelte';

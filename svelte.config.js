@@ -10,8 +10,13 @@ const config = {
 		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 		adapter: adapter(),
 		alias: {
-			'@coral-os/component-library': 'src',
-			'@coral-os/component-library/*': 'src/*',
+			'@coral-os/component-library': 'src/lib',
+			'@coral-os/component-library/*': 'src/lib/*',
+			'@coral-os/component-library/hooks/*': 'src/lib/hooks/*',
+			'@coral-os/component-library/components/*': 'src/lib/components/*',
+			'@coral-os/component-library/ui/*': 'src/lib/components/ui/*',
+
+			// Do NOT use these in lib code
 			'$ui/*': 'src/lib/components/ui/*'
 		}
 	},

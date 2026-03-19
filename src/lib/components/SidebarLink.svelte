@@ -1,8 +1,8 @@
 <script lang="ts">
-	import * as Sidebar from '@coral-os/component-library/lib/components/ui/sidebar/index.js';
+	import * as Sidebar from '@coral-os/component-library/components/ui/sidebar/index.js';
 	import type { Component, ComponentProps } from 'svelte';
 	import { page } from '$app/state';
-	import { cn } from '@coral-os/component-library/lib/utils.js';
+	import { cn } from '@coral-os/component-library/utils.js';
 
 	import IconCaretRight from 'phosphor-icons-svelte/IconCaretRightRegular.svelte';
 

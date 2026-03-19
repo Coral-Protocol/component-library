@@ -1,4 +1,4 @@
-import { IsMobile } from '@coral-os/component-library/lib/hooks/is-mobile.svelte.js';
+import { IsMobile } from '@coral-os/component-library/hooks/is-mobile.svelte.js';
 import { getContext, setContext } from 'svelte';
 import { SIDEBAR_KEYBOARD_SHORTCUT } from './constants.js';
 

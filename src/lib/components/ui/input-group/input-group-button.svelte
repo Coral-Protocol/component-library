@@ -20,9 +20,9 @@
 </script>
 
 <script lang="ts">
-	import { cn } from "@coral-os/component-library/lib/utils.js";
+	import { cn } from "@coral-os/component-library/utils.js";
 	import type { ComponentProps } from "svelte";
-	import { Button } from "@coral-os/component-library/lib/components/ui/button/index.js";
+	import { Button } from "@coral-os/component-library/components/ui/button/index.js";
 
 	let {
 		class: className,

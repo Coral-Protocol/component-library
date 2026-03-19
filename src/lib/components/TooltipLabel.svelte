@@ -1,6 +1,6 @@
 <script lang="ts">
-	import * as Tooltip from '@coral-os/component-library/lib/components/ui/tooltip/index.js';
-	import { Label } from '@coral-os/component-library/lib/components/ui/label/index.js';
+	import * as Tooltip from '@coral-os/component-library/components/ui/tooltip/index.js';
+	import { Label } from '@coral-os/component-library/components/ui/label/index.js';
 
 	import type { Snippet } from 'svelte';
 	import type { LabelRootProps } from 'bits-ui';

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import * as Tooltip from "@coral-os/component-library/lib/components/ui/tooltip/index.js";
-	import { cn, type WithElementRef } from "@coral-os/component-library/lib/utils.js";
+	import * as Tooltip from "@coral-os/component-library/components/ui/tooltip/index.js";
+	import { cn, type WithElementRef } from "@coral-os/component-library/utils.js";
 	import type { HTMLAttributes } from "svelte/elements";
 	import {
 		SIDEBAR_COOKIE_MAX_AGE,

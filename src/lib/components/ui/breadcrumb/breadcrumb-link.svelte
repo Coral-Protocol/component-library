@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { HTMLAnchorAttributes } from "svelte/elements";
 	import type { Snippet } from "svelte";
-	import { cn, type WithElementRef } from "@coral-os/component-library/lib/utils.js";
+	import { cn, type WithElementRef } from "@coral-os/component-library/utils.js";
 
 	let {
 		ref = $bindable(null),

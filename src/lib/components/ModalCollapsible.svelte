@@ -1,11 +1,11 @@
 <script lang="ts">
-	import * as Collapsible from '@coral-os/component-library/lib/components/ui/collapsible/index.js';
-	import { buttonVariants } from '@coral-os/component-library/lib/components/ui/button/index.js';
+	import * as Collapsible from '@coral-os/component-library/components/ui/collapsible/index.js';
+	import { buttonVariants } from '@coral-os/component-library/components/ui/button/index.js';
 
 	import CaretRightIcon from 'phosphor-icons-svelte/IconCaretRightRegular.svelte';
 
 	import type { Snippet } from 'svelte';
-	import { cn } from '@coral-os/component-library/lib/utils.js';
+	import { cn } from '@coral-os/component-library/utils.js';
 
 	const { title, children }: { title: string; children?: Snippet } = $props();
 </script>

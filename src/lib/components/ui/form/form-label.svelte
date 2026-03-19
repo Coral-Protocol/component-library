@@ -1,7 +1,7 @@
 <script lang="ts">
 	import * as FormPrimitive from "formsnap";
-	import { Label } from "@coral-os/component-library/lib/components/ui/label/index.js";
-	import { cn, type WithoutChild } from "@coral-os/component-library/lib/utils.js";
+	import { Label } from "@coral-os/component-library/components/ui/label/index.js";
+	import { cn, type WithoutChild } from "@coral-os/component-library/utils.js";
 
 	let {
 		ref = $bindable(null),

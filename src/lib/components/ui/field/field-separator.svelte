@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { Separator } from "@coral-os/component-library/lib/components/ui/separator/index.js";
-	import { cn, type WithElementRef } from "@coral-os/component-library/lib/utils.js";
+	import { Separator } from "@coral-os/component-library/components/ui/separator/index.js";
+	import { cn, type WithElementRef } from "@coral-os/component-library/utils.js";
 	import type { HTMLAttributes } from "svelte/elements";
 	import type { Snippet } from "svelte";
 
