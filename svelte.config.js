@@ -11,7 +11,8 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			'@coral-os/component-library': 'src',
-			'@coral-os/component-library/*': 'src/*'
+			'@coral-os/component-library/*': 'src/*',
+			'$ui/*': 'src/lib/components/ui/*'
 		}
 	},
 	vitePlugin: {
