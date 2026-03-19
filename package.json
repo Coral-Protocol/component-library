@@ -17,6 +17,7 @@
   },
   "files": [
     "src/lib",
+    "!src/test",
     "!src/**/*.test.*",
     "!src/**/*.spec.*"
   ],
