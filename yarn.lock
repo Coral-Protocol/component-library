@@ -644,6 +644,11 @@
   resolved "https://registry.yarnpkg.com/@sveltejs/adapter-auto/-/adapter-auto-7.0.1.tgz#a2bf530d934ddc9b865966c2702614da258ab7bc"
   integrity sha512-dvuPm1E7M9NI/+canIQ6KKQDU2AkEefEZ2Dp7cY6uKoPq9Z/PhOXABe526UdW2mN986gjVkuSLkOYIBnS/M2LQ==
 
+"@sveltejs/adapter-static@^3.0.10":
+  version "3.0.10"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-static/-/adapter-static-3.0.10.tgz#526ab78cd1d3a861dd0233e8ff34a204af40d595"
+  integrity sha512-7D9lYFWJmB7zxZyTE/qxjksvMqzMuYrrsyh1f4AlZqeZeACPRySjbC3aFiY55wb1tWUaKOQG9PVbm74JcN2Iew==
+
 "@sveltejs/kit@^2.50.2":
   version "2.55.0"
   resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-2.55.0.tgz#780c040a3d1bb354feb31ec6492ed5da86306a49"
@@ -2616,11 +2621,6 @@ validator@^13.12.0, validator@^13.15.22:
   version "13.15.26"
   resolved "https://registry.yarnpkg.com/validator/-/validator-13.15.26.tgz#36c3deeab30e97806a658728a155c66fcaa5b944"
   integrity sha512-spH26xU080ydGggxRyR1Yhcbgx+j3y5jbNXk/8L+iRvdIEQ4uTRH2Sgf2dokud6Q4oAtsbNvJ1Ft+9xmm6IZcA==
-
-virtua@^0.48.5:
-  version "0.48.7"
-  resolved "https://registry.yarnpkg.com/virtua/-/virtua-0.48.7.tgz#37243b85da790aad27ba3bd4cc78956fda18fdb6"
-  integrity sha512-C/izf90SZnrlGDI61yZ9faVlquOHZ8gTqC6T2I99PdzTeM+V0kEkCGUqr+BE2MYfHSksCduD5WI60jDes/Q51A==
 
 "vite@^6.0.0 || ^7.0.0 || ^8.0.0-0":
   version "8.0.0"

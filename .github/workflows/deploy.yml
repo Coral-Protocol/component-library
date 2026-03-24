@@ -1,0 +1,84 @@
+name: Preview Deploys
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+  pages: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      pr: ${{ steps.meta.outputs.pr }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: yarn
+
+      - run: corepack enable
+
+      - name: Install
+        run: yarn install --immutable
+
+      - name: Set PR env
+        id: meta
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "pr=${{ github.event.number }}" >> $GITHUB_OUTPUT
+          else
+            echo "pr=" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Build
+        env:
+          PR_NUMBER: ${{ steps.meta.outputs.pr }}
+          BASE_PATH: '/${{ github.event.repository.name }}/${{ steps.meta.outputs.pr }}'
+        run: yarn build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./build
+
+  deploy-main:
+    if: github.event_name == 'push'
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy root (main)
+        uses: actions/deploy-pages@v4
+
+  deploy-pr:
+    if: github.event_name == 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy PR preview
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          destination_dir: pr-${{ github.event.number }}
+          keep_files: true
+
+      - name: Comment preview URL
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.issue.number;
+            const url = `https://${context.repo.owner}.github.io/${context.repo.repo}/pr-${pr}/`;
+            github.rest.issues.createComment({
+              ...context.repo,
+              issue_number: pr,
+              body: `Preview deployed: ${url}`
+            });
