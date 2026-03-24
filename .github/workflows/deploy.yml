@@ -34,20 +34,20 @@ jobs:
         id: meta
         run: |
           if [ "${{ github.event_name }}" = "pull_request" ]; then
-            echo "pr=${{ github.event.number }}" >> $GITHUB_OUTPUT
+            echo "pr=pr-${{ github.event.number }}" >> $GITHUB_OUTPUT
           else
             echo "pr=" >> $GITHUB_OUTPUT
           fi
 
       - name: Build
         env:
-          PR_NUMBER: ${{ steps.meta.outputs.pr }}
           BASE_PATH: '/${{ github.event.repository.name }}/${{ steps.meta.outputs.pr }}'
         run: yarn build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
+          name: build
           path: ./build
 
   deploy-main:
@@ -55,14 +55,29 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: build
+          path: build
+
       - name: Deploy root (main)
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          destination_dir: .
+          keep_files: true
 
   deploy-pr:
     if: github.event_name == 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: build
+          path: build
+
       - name: Deploy PR preview
         uses: peaceiris/actions-gh-pages@v4
         with:
@@ -76,7 +91,7 @@ jobs:
         with:
           script: |
             const pr = context.issue.number;
-            const url = `https://${context.repo.owner}.github.io/${context.repo.repo}/pr-${pr}/`;
+            const url = `https://${context.repo.owner.toLowerCase()}.github.io/${context.repo.repo}/pr-${pr}/`;
             github.rest.issues.createComment({
               ...context.repo,
               issue_number: pr,
