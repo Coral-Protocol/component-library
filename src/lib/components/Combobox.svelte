@@ -91,7 +91,7 @@
 			<Command.List>
 				<Command.Empty>{emptyLabel}</Command.Empty>
 				{#each options as group}
-					<Command.Group>
+					<Command.Group heading={group.heading}>
 						{#each group.items as item}
 							<Command.Item
 								value={getKey(item)}
