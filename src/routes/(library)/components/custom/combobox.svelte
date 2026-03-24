@@ -59,7 +59,7 @@
 			<Card.Header>
 				<Card.Title>Grouped</Card.Title>
 			</Card.Header>
-			<Card.Content class="grid grid-cols-2 gap-1">
+			<Card.Content class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-x-2 gap-y-5">
 				<div class="flex flex-col items-center justify-center gap-2">
 					<h3 class="text-sm font-medium">Single</h3>
 					<Combobox bind:selected={groupedValue} options={groupedOptions} />
@@ -76,7 +76,7 @@
 			<Card.Header>
 				<Card.Title>Ungrouped</Card.Title>
 			</Card.Header>
-			<Card.Content class="grid grid-cols-2 gap-1">
+			<Card.Content class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-x-2 gap-y-5">
 				<div class="flex flex-col items-center justify-center gap-2">
 					<h3 class="text-sm font-medium">Single</h3>
 					<Combobox bind:selected={ungroupedValue} options={ungroupedOptions} />
