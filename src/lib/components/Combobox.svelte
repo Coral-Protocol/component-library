@@ -107,7 +107,7 @@
 									<CheckIcon
 										class={cn(
 											'mr-2 size-4',
-											!selected || (getKey(selected) !== getKey(item) && 'text-transparent')
+											(!selected || getKey(selected) !== getKey(item)) && 'text-transparent'
 										)}
 									/>
 									{typeof item === 'string' ? item : item.label}
