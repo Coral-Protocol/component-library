@@ -10,7 +10,7 @@
 	import CaretUpDownIcon from 'phosphor-icons-svelte/IconCaretUpDownRegular.svelte';
 
 	type Entry = Value extends string
-		? { label: string; key?: string; value: Value } | string
+		? { label: string; key?: string; value: Value } | Value
 		: { label: string; key?: string; value: Value };
 
 	let {
