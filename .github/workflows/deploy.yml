@@ -41,6 +41,7 @@ jobs:
 
       - name: Build
         env:
+          PUBLIC_PR: '${{ github.event.number }}'
           BASE_PATH: '/${{ github.event.repository.name }}/${{ steps.meta.outputs.pr }}'
         run: yarn build
 

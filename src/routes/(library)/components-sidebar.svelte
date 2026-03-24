@@ -21,6 +21,14 @@
 
 	import type { Component, ComponentProps } from 'svelte';
 
+	import * as env from '$env/static/public';
+	import { Button } from '@coral-os/component-library/components/ui/button';
+	import { Badge } from '@coral-os/component-library/components/ui/badge';
+
+	import IconArrowSquareOut from 'phosphor-icons-svelte/IconArrowSquareOutRegular.svelte';
+
+	const PR: null | string = (env as any).PUBLIC_PR || null;
+
 	let {
 		navItems,
 		...restProps
@@ -29,13 +37,22 @@
 	const pathname = $derived(page.url.pathname);
 </script>
 
-<Sidebar.Root
-	class="sticky top-[calc(var(--header-height)+1px)] z-30 hidden h-[calc(100svh-var(--footer-height)-4rem)] overscroll-none bg-transparent lg:flex"
-	collapsible="none"
->
-	<Sidebar.Content class="no-scrollbar overflow-x-hidden px-2">
+<Sidebar.Root class="hidden h-svh overscroll-none bg-transparent lg:flex" collapsible="icon">
+	<Sidebar.Header class="z-40">
+		<h1 class="flex items-center gap-2">
+			<span class="grow font-bold">Components</span><Badge
+				class="mt-[2px]"
+				variant={PR ? 'secondary' : 'default'}
+				target="_blank"
+				href={PR ? `https://github.com/Coral-Protocol/component-library/pull/${PR}` : ''}
+				>{PR ? `PR #${PR}` : 'main'}
+				{#if PR}<IconArrowSquareOut />{/if}</Badge
+			>
+		</h1>
+	</Sidebar.Header>
+	<Sidebar.Content class="-mt-1 overflow-x-hidden px-2">
 		<div
-			class="sticky -top-1 z-10 h-8 shrink-0 bg-linear-to-b from-background via-background/80 to-background/50 blur-xs"
+			class="sticky -top-1 z-30 -mt-5 h-10 shrink-0 bg-linear-to-b from-sidebar via-sidebar/90 to-sidebar/50 blur-xs"
 		></div>
 		{#each navItems as item (item.title)}
 			<Sidebar.Group>
@@ -73,7 +90,7 @@
 			</Sidebar.Group>
 		{/each}
 		<div
-			class="sticky -bottom-1 z-10 h-16 shrink-0 bg-linear-to-t from-background via-background/80 to-background/50 blur-xs"
+			class="sticky -bottom-1 z-10 h-16 shrink-0 bg-linear-to-t from-sidebar via-sidebar/80 to-sidebar/50 blur-xs"
 		></div>
 	</Sidebar.Content>
 </Sidebar.Root>
