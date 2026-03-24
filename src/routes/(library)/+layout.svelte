@@ -14,11 +14,15 @@
 		<ComponentsSidebar
 			navItems={[
 				{
-					title: 'Components',
+					title: 'UI',
 					items: [
 						{ title: 'Button', href: '#button', items: [] },
 						{ title: 'Checkbox', href: '#checkbox', items: [] }
 					]
+				},
+				{
+					title: 'Custom',
+					items: [{ title: 'Combobox', href: '#combobox', items: [] }]
 				}
 			]}
 		/>
