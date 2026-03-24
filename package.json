@@ -1,6 +1,10 @@
 {
   "name": "@coral-os/component-library",
   "version": "0.2.2",
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Coral-Protocol/component-library.git"
+  },
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && npm run prepack",
