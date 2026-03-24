@@ -1,6 +1,6 @@
 {
   "name": "@coral-os/component-library",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && npm run prepack",
