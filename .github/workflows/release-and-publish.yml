@@ -1,0 +1,46 @@
+name: Release & Publish
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v4
+        id: release
+        with:
+          release-type: node
+
+      - uses: actions/checkout@v4
+        if: steps.release.outputs.releases_created == 'true'
+
+      - uses: actions/setup-node@v4
+        if: steps.release.outputs.releases_created == 'true'
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org/
+
+      - run: corepack enable
+        if: steps.release.outputs.releases_created == 'true'
+
+      - name: Install
+        if: steps.release.outputs.releases_created == 'true'
+        run: yarn install --immutable
+
+      - name: Build
+        if: steps.release.outputs.releases_created == 'true'
+        run: yarn build
+      #
+      # - name: Test
+      #   if: steps.release.outputs.releases_created == 'true'
+      #   run: yarn test
+
+      - name: Publish to npm
+        if: steps.release.outputs.releases_created == 'true'
+        run: yarn publish
