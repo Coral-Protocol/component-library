@@ -10,7 +10,7 @@
 	import CaretUpDownIcon from 'phosphor-icons-svelte/IconCaretUpDownRegular.svelte';
 
 	type Entry = Value extends string
-		? { label: string; key?: string; value: Value } | string
+		? { label: string; key?: string; value: Value } | Value
 		: { label: string; key?: string; value: Value };
 
 	let {
@@ -91,7 +91,7 @@
 			<Command.List>
 				<Command.Empty>{emptyLabel}</Command.Empty>
 				{#each options as group}
-					<Command.Group>
+					<Command.Group heading={group.heading}>
 						{#each group.items as item}
 							<Command.Item
 								value={getKey(item)}
@@ -107,7 +107,7 @@
 									<CheckIcon
 										class={cn(
 											'mr-2 size-4',
-											!selected || (getKey(selected) !== getKey(item) && 'text-transparent')
+											(!selected || getKey(selected) !== getKey(item)) && 'text-transparent'
 										)}
 									/>
 									{typeof item === 'string' ? item : item.label}
