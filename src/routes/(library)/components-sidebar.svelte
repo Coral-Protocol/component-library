@@ -27,6 +27,11 @@
 
 	import IconArrowSquareOut from 'phosphor-icons-svelte/IconArrowSquareOutRegular.svelte';
 
+	import SunIcon from '@lucide/svelte/icons/sun';
+	import MoonIcon from '@lucide/svelte/icons/moon';
+
+	import { toggleMode } from 'mode-watcher';
+
 	const PR: null | string = (env as any).PUBLIC_PR || null;
 
 	let {
@@ -89,6 +94,15 @@
 				</Sidebar.GroupContent>
 			</Sidebar.Group>
 		{/each}
+		<Button onclick={toggleMode} variant="outline" size="icon">
+			<SunIcon
+				class="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all! dark:scale-0 dark:-rotate-90"
+			/>
+			<MoonIcon
+				class="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all! dark:scale-100 dark:rotate-0"
+			/>
+			<span class="sr-only">Toggle theme</span>
+		</Button>
 		<div
 			class="sticky -bottom-1 z-10 h-16 shrink-0 bg-linear-to-t from-sidebar via-sidebar/80 to-sidebar/50 blur-xs"
 		></div>

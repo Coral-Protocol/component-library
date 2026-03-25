@@ -14,7 +14,7 @@
 
 	/* Neutral primary (buttons) */
 	--primary: oklch(0.32 0 0);
-	--primary-foreground: oklch(0.98 0 0);
+	--primary-foreground: oklch(0.15 0 0);
 
 	--secondary: oklch(0.78 0.17 75);
 
@@ -82,7 +82,7 @@
 	--brand-secondary: oklch(0.78 0.17 75); /* #FF9A01 */
 
 	/* ---------- Destructive (semantic saturation allowed) ---------- */
-	--destructive: oklch(0.67 0.2 35); /* red-orange danger */
+	--destructive: oklch(0.65 0.25 25); /* red-orange danger */
 
 	/* ---------- Borders & Focus ---------- */
 	--border: oklch(1 0 0 / 12%);

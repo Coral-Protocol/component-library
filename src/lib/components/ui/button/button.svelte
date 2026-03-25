@@ -11,18 +11,15 @@
 					'bg-primary/10 border border-border text-primary-foreground shadow-xs hover:bg-accent hover:text-accent-foreground',
 				destructive:
 					'bg-destructive/70 shadow-xs hover:bg-destructive dark:hover:bg-destructive focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/70 text-white',
-				danger:
-					'border-destructive border shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60 text-white',
 				outline:
 					'bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-transparent dark:border-border dark:hover:bg-ring/20 border',
 				secondary: 'bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80',
 				ghost: 'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent',
-				ghostHover:
-					'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent text-accent-foreground/50',
 				ghostDestructive:
-					'text-destructive hover:bg-destructive hover:text-accent-foreground dark:hover:bg-destructive',
+					'text-destructive hover:bg-destructive hover:text-white dark:hover:bg-destructive',
 				link: 'text-primary-foreground underline-offset-4 hover:underline',
-				cta: 'bg-accent/70 border border-border text-primary-foreground shadow-xs hover:bg-accent hover:text-accent-foreground'
+				gradient:
+					'hover:bg-gradient-to-r hover:from-accent  hover:to-accent hover:text-white transition duration-300 ease-in-out bg-gradient-to-r from-accent/90  to-secondary'
 			},
 			size: {
 				default: 'h-9 px-4 py-2 has-[>svg]:px-3',
