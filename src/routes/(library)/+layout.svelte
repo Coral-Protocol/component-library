@@ -17,7 +17,8 @@
 					title: 'UI',
 					items: [
 						{ title: 'Button', href: '#button', items: [] },
-						{ title: 'Checkbox', href: '#checkbox', items: [] }
+						{ title: 'Checkbox', href: '#checkbox', items: [] },
+						{ title: 'Context Menu', href: '#context-menu', items: [] }
 					]
 				},
 				{

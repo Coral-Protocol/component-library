@@ -318,7 +318,7 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/retry/-/retry-0.4.3.tgz#c2b9d2e374ee62c586d3adbea87199b1d7a7a6ba"
   integrity sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==
 
-"@internationalized/date@^3.10.0":
+"@internationalized/date@^3.12.0":
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/@internationalized/date/-/date-3.12.0.tgz#cdcd12adf36e1ccb05ec7b964f4857e7ec62137d"
   integrity sha512-/PyIMzK29jtXaGU23qTvNZxvBXRtKbNnGDFD+PY6CZw/Y8Ex8pFUzkuCJCG9aOqmShjqhS9mPqP6Dk5onQY8rQ==
@@ -359,10 +359,10 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@lucide/svelte@^0.561.0":
-  version "0.561.0"
-  resolved "https://registry.yarnpkg.com/@lucide/svelte/-/svelte-0.561.0.tgz#ca5f8ce6ed843da99ec47eebdc9e5b1681ff8862"
-  integrity sha512-vofKV2UFVrKE6I4ewKJ3dfCXSV6iP6nWVmiM83MLjsU91EeJcEg7LoWUABLp/aOTxj1HQNbJD1f3g3L0JQgH9A==
+"@lucide/svelte@^1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@lucide/svelte/-/svelte-1.7.0.tgz#d539025a20b085ddc8c1e252497711e535eb871e"
+  integrity sha512-YytBKOUBGox7yWcykZnYxOkn5WpR5G1qYXLYXV/j1B79SOTTEKzB+s5yF5Rq9l9OkweDStNH2b4yTqfvhEhV8g==
 
 "@napi-rs/wasm-runtime@^1.1.1":
   version "1.1.1"
@@ -1150,7 +1150,7 @@ balanced-match@^4.0.2:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-4.0.4.tgz#bfb10662feed8196a2c62e7c68e17720c274179a"
   integrity sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==
 
-bits-ui@^2.14.4:
+bits-ui@^2.16.3:
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/bits-ui/-/bits-ui-2.16.3.tgz#4df8c04073aec0ce81d75105567a25513e42ecfc"
   integrity sha512-5hJ5dEhf5yPzkRFcxzgQHScGodeo0gK0MUUXrdLlRHWaBOBGZiacWLG96j/wwFatKwZvouw7q+sn14i0fx3RIg==
