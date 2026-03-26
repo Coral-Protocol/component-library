@@ -1,0 +1,16 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema.json",
+	"tailwind": {
+		"css": "src/lib/theme.css",
+		"baseColor": "zinc"
+	},
+	"aliases": {
+		"components": "@coral-os/component-library/components",
+		"utils": "@coral-os/component-library/utils",
+		"ui": "@coral-os/component-library/ui",
+		"hooks": "@coral-os/component-library/hooks",
+		"lib": "@coral-os/component-library"
+	},
+	"typescript": true,
+	"registry": "https://shadcn-svelte.com/registry"
+}
