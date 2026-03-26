@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/Coral-Protocol/component-library/compare/v1.0.0...v1.1.0) (2026-03-26)
+
+
+### Features
+
+* **ui:** add context menu component ([#11](https://github.com/Coral-Protocol/component-library/issues/11)) ([a6dbde5](https://github.com/Coral-Protocol/component-library/commit/a6dbde52c34ae19a016c93211989240e75b968d7))
+
+
+### Bug Fixes
+
+* theme css comment ([fba7939](https://github.com/Coral-Protocol/component-library/commit/fba7939c3b4c84e5aa20cb09c1b48fea9f7d8da4))
+
 ## 1.0.0 (2026-03-24)
 
 
