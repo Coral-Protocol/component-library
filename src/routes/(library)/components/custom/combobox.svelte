@@ -36,8 +36,8 @@
 		}
 	];
 
-	let groupedValue: string | undefined = $state(undefined);
-	let ungroupedValue: string | undefined = $state(undefined);
+	let groupedValue: string[] = $state([]);
+	let ungroupedValue: string[] = $state([]);
 </script>
 
 <Card.Root id="combobox">
@@ -48,8 +48,8 @@
 			<Button
 				size="sm"
 				onclick={() => {
-					groupedValue = undefined;
-					ungroupedValue = undefined;
+					groupedValue = [];
+					ungroupedValue = [];
 				}}>Reset</Button
 			></Card.Title
 		>
@@ -62,13 +62,25 @@
 			<Card.Content class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-x-2 gap-y-5">
 				<div class="flex flex-col items-center justify-center gap-2">
 					<h3 class="text-sm font-medium">Single</h3>
-					<Combobox bind:selected={groupedValue} options={groupedOptions} />
-					<Combobox disabled bind:selected={groupedValue} options={groupedOptions} />
+					<Combobox
+						bind:selected={() => groupedValue[0], (set) => (groupedValue = [set])}
+						options={groupedOptions}
+					/>
+					<Combobox
+						disabled
+						bind:selected={() => groupedValue[0], (set) => (groupedValue = [set])}
+						options={groupedOptions}
+					/>
 				</div>
 				<div class="flex flex-col items-center justify-center gap-2">
-					<h3 class="text-sm font-medium">Multiple (TODO)</h3>
-					<Combobox disabled bind:selected={groupedValue} options={groupedOptions} />
-					<Combobox disabled bind:selected={groupedValue} options={groupedOptions} />
+					<h3 class="text-sm font-medium">Multiple</h3>
+					<Combobox type="multiple" bind:selected={groupedValue} options={groupedOptions} />
+					<Combobox
+						disabled
+						type="multiple"
+						bind:selected={groupedValue}
+						options={groupedOptions}
+					/>
 				</div>
 			</Card.Content>
 		</Card.Root>
@@ -79,13 +91,25 @@
 			<Card.Content class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-x-2 gap-y-5">
 				<div class="flex flex-col items-center justify-center gap-2">
 					<h3 class="text-sm font-medium">Single</h3>
-					<Combobox bind:selected={ungroupedValue} options={ungroupedOptions} />
-					<Combobox disabled bind:selected={ungroupedValue} options={ungroupedOptions} />
+					<Combobox
+						bind:selected={() => ungroupedValue[0], (set) => (ungroupedValue = [set])}
+						options={ungroupedOptions}
+					/>
+					<Combobox
+						disabled
+						bind:selected={() => ungroupedValue[0], (set) => (ungroupedValue = [set])}
+						options={ungroupedOptions}
+					/>
 				</div>
 				<div class="flex flex-col items-center justify-center gap-2">
-					<h3 class="text-sm font-medium">Multiple (TODO)</h3>
-					<Combobox disabled bind:selected={ungroupedValue} options={ungroupedOptions} />
-					<Combobox disabled bind:selected={ungroupedValue} options={ungroupedOptions} />
+					<h3 class="text-sm font-medium">Multiple</h3>
+					<Combobox type="multiple" bind:selected={ungroupedValue} options={ungroupedOptions} />
+					<Combobox
+						disabled
+						type="multiple"
+						bind:selected={ungroupedValue}
+						options={ungroupedOptions}
+					/>
 				</div>
 			</Card.Content>
 		</Card.Root>
