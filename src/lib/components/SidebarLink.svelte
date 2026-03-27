@@ -1,6 +1,6 @@
 <script lang="ts">
 	import * as Sidebar from '@coral-os/component-library/components/ui/sidebar/index.js';
-	import type { Component, ComponentProps } from 'svelte';
+	import type { Component, ComponentProps, Snippet } from 'svelte';
 	import { page } from '$app/state';
 	import { cn } from '@coral-os/component-library/utils.js';
 
@@ -14,6 +14,7 @@
 		collapsible = false,
 		class: className,
 		disabled,
+		extra,
 		...props
 	}: ComponentProps<typeof Sidebar.MenuButton> & {
 		title: string;
@@ -22,6 +23,7 @@
 		badge?: number | string;
 		collapsible?: boolean;
 		disabled?: boolean | null;
+		extra?: Snippet<[]>;
 	} = $props();
 </script>
 
@@ -32,7 +34,7 @@
 	<span class="font-sans font-medium tracking-wide">
 		{title}
 	</span>
-
+	{@render extra?.()}
 	{#if collapsible}
 		<IconCaretRight
 			class="ml-auto transition-transform duration-200 group-aria-expanded/collapsible:rotate-90"
@@ -58,7 +60,6 @@
 		<Sidebar.MenuButton
 			{...props}
 			tooltipContent={props.tooltipContent ?? title}
-			isActive={page.url.pathname === url}
 			class={cn('group', className)}
 		>
 			{@render content()}
