@@ -103,19 +103,21 @@
 					role="combobox"
 					aria-expanded={open}
 				>
-					{#if selected !== undefined}
-						{#if Array.isArray(selected)}
-							{#if selected.length === 0}
-								{selectPlaceholder}
+					<span class="truncate">
+						{#if selected !== undefined}
+							{#if Array.isArray(selected)}
+								{#if selected.length === 0}
+									{selectPlaceholder}
+								{:else}
+									{selected.map((s) => (typeof s === 'string' ? s : s.label)).join(', ')}
+								{/if}
 							{:else}
-								{selected.map((s) => (typeof s === 'string' ? s : s.label)).join(', ')}
+								{typeof selected === 'string' ? selected : selected.label}
 							{/if}
 						{:else}
-							{typeof selected === 'string' ? selected : selected.label}
+							{selectPlaceholder}
 						{/if}
-					{:else}
-						{selectPlaceholder}
-					{/if}
+					</span>
 					<CaretUpDownIcon class="ml-2 size-4 shrink-0 opacity-50" />
 				</Button>
 			{/if}
