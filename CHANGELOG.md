@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.2.0](https://github.com/Coral-Protocol/component-library/compare/v1.1.0...v1.2.0) (2026-03-27)
+
+
+### Features
+
+* add extra snippet to SidebarLink ([#14](https://github.com/Coral-Protocol/component-library/issues/14)) ([3fd65b4](https://github.com/Coral-Protocol/component-library/commit/3fd65b4aeac45af200c717a19a4c4f7e90b91f74))
+* **demo:** add btn text override, size visibility toggles & icon size special-case ([#16](https://github.com/Coral-Protocol/component-library/issues/16)) ([ba36618](https://github.com/Coral-Protocol/component-library/commit/ba36618586068e946bb513aa3bb5fa54b898f348))
+* improve contrast and clean up some old button variants ([#12](https://github.com/Coral-Protocol/component-library/issues/12)) ([21918ef](https://github.com/Coral-Protocol/component-library/commit/21918efa6cfae57435db7385262b1571405bd1a7))
+* **ui:** support single/multiple selection in Combobox ([#15](https://github.com/Coral-Protocol/component-library/issues/15)) ([a1d04ac](https://github.com/Coral-Protocol/component-library/commit/a1d04ac53f5f9bdbe22f9afb421ac5bc77ea9615))
+
 ## [1.1.0](https://github.com/Coral-Protocol/component-library/compare/v1.0.0...v1.1.0) (2026-03-26)
 
 
