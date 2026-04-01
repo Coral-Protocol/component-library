@@ -15,6 +15,7 @@
 		class: className,
 		disabled,
 		extra,
+		sub = false,
 		...props
 	}: ComponentProps<typeof Sidebar.MenuButton> & {
 		title: string;
@@ -24,7 +25,10 @@
 		collapsible?: boolean;
 		disabled?: boolean | null;
 		extra?: Snippet<[]>;
+		sub?: boolean;
 	} = $props();
+
+	let Item = $derived(sub ? Sidebar.MenuSubItem : Sidebar.MenuItem);
 </script>
 
 {#snippet content()}
@@ -42,12 +46,24 @@
 	{/if}
 {/snippet}
 
-<Sidebar.MenuItem class="{disabled ? 'pointer-events-none opacity-50' : ''} transition-opacity">
+<Item class="{disabled ? 'pointer-events-none opacity-50' : ''} transition-opacity">
 	{#if url}
 		<Sidebar.MenuButton
 			{...props}
 			tooltipContent={props.tooltipContent ?? title}
 			isActive={page.url.pathname === url}
+			class={cn('group', className)}
+		>
+			{#snippet child({ props })}
+				<a {...props} href={url}>
+					{@render content()}
+				</a>
+			{/snippet}
+		</Sidebar.MenuButton>
+	{:else if collapsible}
+		<Sidebar.MenuButton
+			{...props}
+			tooltipContent={props.tooltipContent ?? title}
 			class={cn('group', className)}
 		>
 			{#snippet child({ props })}
@@ -68,4 +84,4 @@
 	{#if badge}
 		<Sidebar.MenuBadge class="bg-primary/10">{badge}</Sidebar.MenuBadge>
 	{/if}
-</Sidebar.MenuItem>
+</Item>
