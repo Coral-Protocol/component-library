@@ -60,6 +60,18 @@
 				</a>
 			{/snippet}
 		</Sidebar.MenuButton>
+	{:else if collapsible}
+		<Sidebar.MenuButton
+			{...props}
+			tooltipContent={props.tooltipContent ?? title}
+			class={cn('group', className)}
+		>
+			{#snippet child({ props })}
+				<a {...props} href={url}>
+					{@render content()}
+				</a>
+			{/snippet}
+		</Sidebar.MenuButton>
 	{:else}
 		<Sidebar.MenuButton
 			{...props}
