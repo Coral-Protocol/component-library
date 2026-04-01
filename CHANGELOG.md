@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/Coral-Protocol/component-library/compare/v1.2.0...v1.3.0) (2026-04-01)
+
+
+### Features
+
+* SidebarLink improvements ([#17](https://github.com/Coral-Protocol/component-library/issues/17)) ([5856a84](https://github.com/Coral-Protocol/component-library/commit/5856a84d7428f6a3346fa33134c2a0d178129b26))
+
 ## [1.2.0](https://github.com/Coral-Protocol/component-library/compare/v1.1.0...v1.2.0) (2026-03-27)
 
 
