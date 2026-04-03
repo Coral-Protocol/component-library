@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/Coral-Protocol/component-library/compare/v1.3.0...v1.3.1) (2026-04-03)
+
+
+### Bug Fixes
+
+* removed rando forced urbanist on accordians ([#19](https://github.com/Coral-Protocol/component-library/issues/19)) ([db1b92f](https://github.com/Coral-Protocol/component-library/commit/db1b92f6b9ca9f80ebd825c3de0292609c9031e8))
+
 ## [1.3.0](https://github.com/Coral-Protocol/component-library/compare/v1.2.0...v1.3.0) (2026-04-01)
 
 
