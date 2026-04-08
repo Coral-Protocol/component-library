@@ -170,14 +170,14 @@
 	/* 	@apply transition-transform duration-75 ease-in-out; */
 	/* } */
 
-	h1,
+	/* h1,
 	h2,
 	h3,
 	h4,
 	h5,
 	h6 {
 		@apply font-mono tracking-wider;
-	}
+	} */
 }
 
 @custom-variant data-open {
