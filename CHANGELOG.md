@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.4.0](https://github.com/Coral-Protocol/component-library/compare/v1.3.1...v1.4.0) (2026-04-08)
+
+
+### Features
+
+* added shadcn avatar ([#21](https://github.com/Coral-Protocol/component-library/issues/21)) ([4fc2b6c](https://github.com/Coral-Protocol/component-library/commit/4fc2b6c0700c6478d798bfb420dee0e1bcba83cd))
+
+
+### Bug Fixes
+
+* remove font headings ([#22](https://github.com/Coral-Protocol/component-library/issues/22)) ([25db135](https://github.com/Coral-Protocol/component-library/commit/25db135afaf4ccfb3c604f0401e6924b35ef9bae))
+
 ## [1.3.1](https://github.com/Coral-Protocol/component-library/compare/v1.3.0...v1.3.1) (2026-04-03)
 
 
