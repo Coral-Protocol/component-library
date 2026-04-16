@@ -12,5 +12,9 @@
 		"lib": "@coral-os/component-library"
 	},
 	"typescript": true,
-	"registry": "https://shadcn-svelte.com/registry"
+	"registry": "https://shadcn-svelte.com/registry",
+	"style": "mira",
+	"iconLibrary": "phosphor",
+	"menuColor": "default",
+	"menuAccent": "subtle"
 }
