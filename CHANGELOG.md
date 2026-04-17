@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/Coral-Protocol/component-library/compare/v1.4.0...v1.5.0) (2026-04-17)
+
+
+### Features
+
+* new colors and a few new additions to the button, removed gradient ([#24](https://github.com/Coral-Protocol/component-library/issues/24)) ([f400799](https://github.com/Coral-Protocol/component-library/commit/f400799480ac84e7ce85d86eb0442d23248c9b3e))
+
 ## [1.4.0](https://github.com/Coral-Protocol/component-library/compare/v1.3.1...v1.4.0) (2026-04-08)
 
 
