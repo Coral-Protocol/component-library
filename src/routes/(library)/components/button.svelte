@@ -29,7 +29,7 @@
 		<Card.Root class="">
 			<Card.Content class="flex flex-col gap-2">
 				<h2 class="font-sans font-bold">Visibility</h2>
-				<section class="flex gap-2">
+				<section class="flex flex-wrap gap-2">
 					{#each sizes as size}
 						<Label>
 							<Checkbox bind:checked={sizeVisibility[size]} />
@@ -51,7 +51,7 @@
 						{#each sizes as size}
 							{#if sizeVisibility[size]}
 								<Button {variant} {size}
-									>{#if size === 'icon'}
+									>{#if size.includes('icon')}
 										<IconArchive />
 									{:else}
 										{textOverride || size}
@@ -64,7 +64,7 @@
 						{#each sizes as size}
 							{#if sizeVisibility[size]}
 								<Button {variant} {size} disabled
-									>{#if size === 'icon'}
+									>{#if size.includes('icon')}
 										<IconArchive />
 									{:else}
 										{textOverride || size}
