@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/Coral-Protocol/component-library/compare/v1.5.0...v1.5.1) (2026-04-20)
+
+
+### Bug Fixes
+
+* removed css imports ([#26](https://github.com/Coral-Protocol/component-library/issues/26)) ([9ff13df](https://github.com/Coral-Protocol/component-library/commit/9ff13dfa5a5ae7121f6832bb3f6ab4f6fe814718))
+
 ## [1.5.0](https://github.com/Coral-Protocol/component-library/compare/v1.4.0...v1.5.0) (2026-04-17)
 
 
