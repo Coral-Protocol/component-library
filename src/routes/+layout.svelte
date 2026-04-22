@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>Coral Console</title>
+	<title>Coral Component Library</title>
 </svelte:head>
 
 <ModeWatcher />
