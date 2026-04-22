@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/Coral-Protocol/component-library/compare/v1.5.1...v1.6.0) (2026-04-22)
+
+
+### Features
+
+* a new comp that shows all colors + some new colors were added ([#28](https://github.com/Coral-Protocol/component-library/issues/28)) ([fea620e](https://github.com/Coral-Protocol/component-library/commit/fea620eb16b4841271b5ad36c14c6ae6028704a0))
+
 ## [1.5.1](https://github.com/Coral-Protocol/component-library/compare/v1.5.0...v1.5.1) (2026-04-20)
 
 
