@@ -1,10 +1,9 @@
 <script lang="ts">
-	import { Tabs as TabsPrimitive } from "bits-ui";
-	import { cn } from "@coral-os/component-library/utils.js";
-
+	import { Tabs as TabsPrimitive } from 'bits-ui';
+	import { cn } from '$lib/utils.js';
 	let {
 		ref = $bindable(null),
-		value = $bindable(""),
+		value = $bindable(''),
 		class: className,
 		...restProps
 	}: TabsPrimitive.RootProps = $props();
@@ -14,6 +13,6 @@
 	bind:ref
 	bind:value
 	data-slot="tabs"
-	class={cn("flex flex-col gap-2", className)}
+	class={cn('group/tabs flex gap-2 data-[orientation=horizontal]:flex-col', className)}
 	{...restProps}
 />
