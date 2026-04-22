@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.7.0](https://github.com/Coral-Protocol/component-library/compare/v1.6.0...v1.7.0) (2026-04-22)
+
+
+### Features
+
+* added default tab view ([47ee28b](https://github.com/Coral-Protocol/component-library/commit/47ee28b56d1b028e05fb6ea4d7d59dfde0398a22))
+
+
+### Bug Fixes
+
+* restored default tabs with updates ([533cc93](https://github.com/Coral-Protocol/component-library/commit/533cc9305c3ba8ca8c145dff7256a168cc51a475))
+
 ## [1.6.0](https://github.com/Coral-Protocol/component-library/compare/v1.5.1...v1.6.0) (2026-04-22)
 
 
