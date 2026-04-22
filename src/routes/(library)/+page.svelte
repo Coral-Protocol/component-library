@@ -5,6 +5,7 @@
 	import Combobox from './components/custom/combobox.svelte';
 	import Colors from './components/custom/colors.svelte';
 	import Tabs from './components/tabs.svelte';
+	import Accordion from './components/accordion.svelte';
 </script>
 
 <main class="mx-[5%] flex flex-col gap-8 py-8 lg:mx-auto lg:w-4/5">
@@ -12,6 +13,7 @@
 	<Checkbox />
 	<ContextMenu />
 	<Tabs />
+	<Accordion />
 	<Combobox />
 	<Colors />
 </main>
