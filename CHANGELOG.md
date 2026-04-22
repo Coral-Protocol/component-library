@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.1](https://github.com/Coral-Protocol/component-library/compare/v1.7.0...v1.7.1) (2026-04-22)
+
+
+### Bug Fixes
+
+* tab content ([0a78ffa](https://github.com/Coral-Protocol/component-library/commit/0a78ffaed36971c577215526df0e6a96a5c3ce6b))
+
 ## [1.7.0](https://github.com/Coral-Protocol/component-library/compare/v1.6.0...v1.7.0) (2026-04-22)
 
 
