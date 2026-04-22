@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.2](https://github.com/Coral-Protocol/component-library/compare/v1.7.1...v1.7.2) (2026-04-22)
+
+
+### Bug Fixes
+
+* added accordion to demo page ([f30d7a5](https://github.com/Coral-Protocol/component-library/commit/f30d7a57abc2c19382f5d4474b63ce9addf4b2d8))
+
 ## [1.7.1](https://github.com/Coral-Protocol/component-library/compare/v1.7.0...v1.7.1) (2026-04-22)
 
 
