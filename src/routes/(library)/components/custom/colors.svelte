@@ -1,4 +1,6 @@
 <script lang="ts">
+	import * as Tooltip from '$lib/components/ui/tooltip/index.js';
+
 	const colors = [
 		'background',
 		'foreground',
@@ -39,17 +41,29 @@
 
 <div class="grid grid-cols-4 gap-4 md:grid-cols-5 lg:grid-cols-6">
 	{#each colors as color}
-		<div class="overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm">
-			<div class="h-20 w-full" style={`background: var(--${color})`}></div>
-			<div class="space-y-1 p-3">
-				<p class="text-sm leading-none font-medium">
-					{color}
-				</p>
-				<p class="text-xs break-all text-muted-foreground">
+		<Tooltip.Root>
+			<Tooltip.Trigger>
+				<div class="overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm">
+					<div class="h-20 w-full" style={`background: var(--${color})`}></div>
+					<div class="space-y-1 p-3">
+						<p class="text-sm leading-none font-medium">
+							{color}
+						</p>
+						<p class="text-xs break-all text-muted-foreground">
+							var(--{color})
+						</p>
+					</div>
+				</div>
+			</Tooltip.Trigger>
+			<Tooltip.Content>
+				<p class="text-sm font-medium">
 					var(--{color})
 				</p>
-			</div>
-		</div>
+				<p class="text-xs text-muted-foreground">
+					{getComputedStyle(document.documentElement).getPropertyValue(`--${color}`).trim()}
+				</p>
+			</Tooltip.Content>
+		</Tooltip.Root>
 	{/each}
 </div>
 
