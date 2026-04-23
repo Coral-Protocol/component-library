@@ -15,6 +15,11 @@
 	--primary: oklch(0.553 0.195 38.402);
 	--primary-foreground: oklch(0.98 0.016 73.684);
 
+		
+	--brand-primary: oklch(0.6837 0.212 40.59);
+	--brand-secondary: oklch(0.7737 0.1734 65.01);
+
+
 	--secondary: oklch(0.967 0.001 286.375);
 
 	--secondary-foreground: oklch(0.21 0.006 285.885);
