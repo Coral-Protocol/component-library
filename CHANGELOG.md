@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.3](https://github.com/Coral-Protocol/component-library/compare/v1.7.2...v1.7.3) (2026-04-23)
+
+
+### Bug Fixes
+
+* tooltip preview + fix + branding color on light mode ([#33](https://github.com/Coral-Protocol/component-library/issues/33)) ([73d0a53](https://github.com/Coral-Protocol/component-library/commit/73d0a532b0a3400fb83aa87431a97b57e82d182f))
+
 ## [1.7.2](https://github.com/Coral-Protocol/component-library/compare/v1.7.1...v1.7.2) (2026-04-22)
 
 
