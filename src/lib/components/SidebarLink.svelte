@@ -4,7 +4,7 @@
 	import { page } from '$app/state';
 	import { cn } from '@coral-os/component-library/utils.js';
 
-	import IconCaretRight from 'phosphor-icons-svelte/IconCaretRightRegular.svelte';
+	import IconCaretRight from 'phosphor-svelte/lib/CaretRightIcon';
 
 	const {
 		title,

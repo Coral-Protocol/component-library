@@ -2073,11 +2073,6 @@ pathe@^2.0.3:
   resolved "https://registry.yarnpkg.com/pathe/-/pathe-2.0.3.tgz#3ecbec55421685b70a9da872b2cff3e1cbed1716"
   integrity sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==
 
-phosphor-icons-svelte@^2.0.9:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/phosphor-icons-svelte/-/phosphor-icons-svelte-2.1.0.tgz#a6791f652accb2c1a95e8a060738b84544b364c9"
-  integrity sha512-gTNxjkc3Wth5stZuVrMWrP07Obv5wUxg9zAqe2tujnLIKa+RaVWNgjOzR+Y9RE3l7bV1PN7dGcBAWR+ps7HA+Q==
-
 phosphor-svelte@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/phosphor-svelte/-/phosphor-svelte-3.1.0.tgz#65eaaac97618c2665d6cbdc048e8f8699105ace0"

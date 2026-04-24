@@ -25,7 +25,7 @@
 	import { Button } from '@coral-os/component-library/components/ui/button';
 	import { Badge } from '@coral-os/component-library/components/ui/badge';
 
-	import IconArrowSquareOut from 'phosphor-icons-svelte/IconArrowSquareOutRegular.svelte';
+	import IconArrowSquareOut from 'phosphor-svelte/lib/ArrowSquareOutIcon';
 
 	import SunIcon from '@lucide/svelte/icons/sun';
 	import MoonIcon from '@lucide/svelte/icons/moon';

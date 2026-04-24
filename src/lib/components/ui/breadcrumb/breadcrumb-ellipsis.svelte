@@ -1,6 +1,6 @@
 <script lang="ts">
 	// import EllipsisIcon from "@lucide/svelte/icons/ellipsis";
-	import EllipsisIcon from 'phosphor-icons-svelte/IconDotsThreeRegular.svelte';
+	import EllipsisIcon from 'phosphor-svelte/lib/DotsThreeIcon';
 
 	import type { HTMLAttributes } from 'svelte/elements';
 	import { cn, type WithElementRef, type WithoutChildren } from '@coral-os/component-library/utils.js';

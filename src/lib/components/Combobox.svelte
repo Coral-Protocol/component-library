@@ -6,8 +6,8 @@
 	import { tick, type ComponentProps, type Snippet } from 'svelte';
 	import { cn } from '@coral-os/component-library/utils.js';
 
-	import CheckIcon from 'phosphor-icons-svelte/IconCheckRegular.svelte';
-	import CaretUpDownIcon from 'phosphor-icons-svelte/IconCaretUpDownRegular.svelte';
+	import CheckIcon from 'phosphor-svelte/lib/CheckIcon';
+	import CaretUpDownIcon from 'phosphor-svelte/lib/CaretUpDownIcon';
 
 	type Entry = Value extends string
 		? { label: string; key?: string; value: Value } | Value

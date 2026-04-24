@@ -7,7 +7,7 @@
 
 	import * as Card from '$ui/card';
 
-	import IconArchive from 'phosphor-icons-svelte/IconArchiveRegular.svelte';
+	import IconArchive from 'phosphor-svelte/lib/ArchiveIcon';
 	import { Separator } from '@coral-os/component-library/components/ui/separator';
 
 	let variants = Object.keys(

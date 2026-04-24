@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { cn } from '@coral-os/component-library/utils.js';
-	import SpinnerIcon from 'phosphor-icons-svelte/IconSpinnerGapRegular.svelte';
+	import SpinnerIcon from 'phosphor-svelte/lib/SpinnerGapIcon';
 	import type { HTMLAttributes } from 'svelte/elements';
 
 	let { class: className, ...restProps }: HTMLAttributes<HTMLDivElement> = $props();

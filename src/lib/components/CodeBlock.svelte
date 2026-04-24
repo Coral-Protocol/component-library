@@ -5,7 +5,7 @@
 	import type { ComponentProps } from 'svelte';
 	import { cn } from '@coral-os/component-library/utils.js';
 
-	import CopyIcon from 'phosphor-icons-svelte/IconCopyRegular.svelte';
+	import CopyIcon from 'phosphor-svelte/lib/CopyIcon';
 
 	const {
 		text = '',
