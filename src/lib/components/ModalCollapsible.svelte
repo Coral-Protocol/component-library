@@ -2,7 +2,7 @@
 	import * as Collapsible from '@coral-os/component-library/components/ui/collapsible/index.js';
 	import { buttonVariants } from '@coral-os/component-library/components/ui/button/index.js';
 
-	import CaretRightIcon from 'phosphor-icons-svelte/IconCaretRightRegular.svelte';
+	import CaretRightIcon from 'phosphor-svelte/lib/CaretRightIcon';
 
 	import type { Snippet } from 'svelte';
 	import { cn } from '@coral-os/component-library/utils.js';

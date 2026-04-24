@@ -6,8 +6,8 @@
 	import { cn } from '@coral-os/component-library/utils.js';
 	import type { TooltipTriggerProps } from 'bits-ui';
 
-	import IconCopy from 'phosphor-icons-svelte/IconCopyRegular.svelte';
-	import IconCheck from 'phosphor-icons-svelte/IconCheckRegular.svelte';
+	import IconCopy from 'phosphor-svelte/lib/CopyIcon';
+	import IconCheck from 'phosphor-svelte/lib/CheckIcon';
 
 	let { class: className, value, ...props }: TooltipTriggerProps & { value?: string } = $props();
 
