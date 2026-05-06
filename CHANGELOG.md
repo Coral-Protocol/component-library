@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/Coral-Protocol/component-library/compare/v1.7.3...v1.8.0) (2026-05-06)
+
+
+### Features
+
+* added data table + removed rando css ([bfd78b5](https://github.com/Coral-Protocol/component-library/commit/bfd78b55165d5d6f04ae8696842f674986526b2a))
+
 ## [1.7.3](https://github.com/Coral-Protocol/component-library/compare/v1.7.2...v1.7.3) (2026-04-23)
 
 
