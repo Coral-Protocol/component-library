@@ -73,7 +73,5 @@
 		align-items: center;
 		justify-content: center;
 		font-size: 0.75rem;
-		color: white;
-		mix-blend-mode: difference;
 	}
 </style>
