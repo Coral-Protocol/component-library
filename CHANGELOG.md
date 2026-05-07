@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.2](https://github.com/Coral-Protocol/component-library/compare/v2.1.1...v2.1.2) (2026-05-07)
+
+
+### Bug Fixes
+
+* relative paths for input groupt ([57de65c](https://github.com/Coral-Protocol/component-library/commit/57de65c96e32116a0db2b97bd547cc746cb56943))
+
 ## [2.1.1](https://github.com/Coral-Protocol/component-library/compare/v2.1.0...v2.1.1) (2026-05-07)
 
 
