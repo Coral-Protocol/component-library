@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { cn, type WithElementRef, type WithoutChildren } from '@coral-os/component-library/utils.js';
+	import { cn, type WithElementRef, type WithoutChildren } from '$lib/utils.js';
 	import type { HTMLAttributes } from 'svelte/elements';
 
 	let {
@@ -12,6 +12,6 @@
 <div
 	bind:this={ref}
 	data-slot="skeleton"
-	class={cn('bg-primary animate-pulse rounded-md', className)}
+	class={cn('animate-pulse rounded-md bg-muted', className)}
 	{...restProps}
 ></div>
