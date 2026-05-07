@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.3](https://github.com/Coral-Protocol/component-library/compare/v2.1.2...v2.1.3) (2026-05-07)
+
+
+### Bug Fixes
+
+* skeleton color ([5967798](https://github.com/Coral-Protocol/component-library/commit/5967798c7f478888d1f6e791fcb5409df75892e4))
+
 ## [2.1.2](https://github.com/Coral-Protocol/component-library/compare/v2.1.1...v2.1.2) (2026-05-07)
 
 
