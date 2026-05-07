@@ -1,5 +1,58 @@
 # Changelog
 
+## [2.0.0](https://github.com/Coral-Protocol/component-library/compare/v1.8.0...v2.0.0) (2026-05-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* change exports
+
+### Features
+
+* a new comp that shows all colors + some new colors were added ([#28](https://github.com/Coral-Protocol/component-library/issues/28)) ([fea620e](https://github.com/Coral-Protocol/component-library/commit/fea620eb16b4841271b5ad36c14c6ae6028704a0))
+* add components from console ([0209e4d](https://github.com/Coral-Protocol/component-library/commit/0209e4dde2f9431cc48a6545a0a164adac021318))
+* add extra snippet to SidebarLink ([#14](https://github.com/Coral-Protocol/component-library/issues/14)) ([3fd65b4](https://github.com/Coral-Protocol/component-library/commit/3fd65b4aeac45af200c717a19a4c4f7e90b91f74))
+* added data table + removed rando css ([bfd78b5](https://github.com/Coral-Protocol/component-library/commit/bfd78b55165d5d6f04ae8696842f674986526b2a))
+* added default tab view ([47ee28b](https://github.com/Coral-Protocol/component-library/commit/47ee28b56d1b028e05fb6ea4d7d59dfde0398a22))
+* added shadcn avatar ([#21](https://github.com/Coral-Protocol/component-library/issues/21)) ([4fc2b6c](https://github.com/Coral-Protocol/component-library/commit/4fc2b6c0700c6478d798bfb420dee0e1bcba83cd))
+* better component lib sidebar + pr link ([19a5bc1](https://github.com/Coral-Protocol/component-library/commit/19a5bc18c8d3759d7a7c71128f473b79e810b749))
+* change exports ([c94f0bd](https://github.com/Coral-Protocol/component-library/commit/c94f0bdce2e57ecf1a8d24a8cd6cb971dfb2e903))
+* combobox demo ([9f22aba](https://github.com/Coral-Protocol/component-library/commit/9f22aba4b68b5d756d0562fbb2a913f1127a6359))
+* component demo start ([6e40444](https://github.com/Coral-Protocol/component-library/commit/6e404444c84481a8683a1a64ca7b660bd25449a3))
+* **demo:** add btn text override, size visibility toggles & icon size special-case ([#16](https://github.com/Coral-Protocol/component-library/issues/16)) ([ba36618](https://github.com/Coral-Protocol/component-library/commit/ba36618586068e946bb513aa3bb5fa54b898f348))
+* improve contrast and clean up some old button variants ([#12](https://github.com/Coral-Protocol/component-library/issues/12)) ([21918ef](https://github.com/Coral-Protocol/component-library/commit/21918efa6cfae57435db7385262b1571405bd1a7))
+* new colors and a few new additions to the button, removed gradient ([#24](https://github.com/Coral-Protocol/component-library/issues/24)) ([f400799](https://github.com/Coral-Protocol/component-library/commit/f400799480ac84e7ce85d86eb0442d23248c9b3e))
+* SidebarLink improvements ([#17](https://github.com/Coral-Protocol/component-library/issues/17)) ([5856a84](https://github.com/Coral-Protocol/component-library/commit/5856a84d7428f6a3346fa33134c2a0d178129b26))
+* temporary list of a bunch of components ([62d5472](https://github.com/Coral-Protocol/component-library/commit/62d54727a6f78e80201beb9ce93d921a7deb288b))
+* theme css + start component playground ([86c8fa0](https://github.com/Coral-Protocol/component-library/commit/86c8fa0e5c7299cf42a2fd5aa5ff98e93087e15a))
+* **ui:** add context menu component ([#11](https://github.com/Coral-Protocol/component-library/issues/11)) ([a6dbde5](https://github.com/Coral-Protocol/component-library/commit/a6dbde52c34ae19a016c93211989240e75b968d7))
+* **ui:** support single/multiple selection in Combobox ([#15](https://github.com/Coral-Protocol/component-library/issues/15)) ([a1d04ac](https://github.com/Coral-Protocol/component-library/commit/a1d04ac53f5f9bdbe22f9afb421ac5bc77ea9615))
+* working component export ([b1af6dc](https://github.com/Coral-Protocol/component-library/commit/b1af6dc489c233b6c842dc3129cfec424f3749dc))
+
+
+### Bug Fixes
+
+* add sveltekit dep ([e3e6ca3](https://github.com/Coral-Protocol/component-library/commit/e3e6ca33362a31c12727f0a941e4b3316f2afa44))
+* added accordion to demo page ([f30d7a5](https://github.com/Coral-Protocol/component-library/commit/f30d7a57abc2c19382f5d4474b63ce9addf4b2d8))
+* dedicated theme.css export ([78e61ac](https://github.com/Coral-Protocol/component-library/commit/78e61ac3d61a1d7a193af5228a7adf4fa1c042b9))
+* **demo:** combobox wrapping ([8746761](https://github.com/Coral-Protocol/component-library/commit/87467617472c84756e8905e68cf15d802852d722))
+* deps ([bf1e68e](https://github.com/Coral-Protocol/component-library/commit/bf1e68e7a0e58ecaed94fde672c8d729920b8ae6))
+* don't include lib/test in bundle ([9a4be2e](https://github.com/Coral-Protocol/component-library/commit/9a4be2e3787185473c4b47205eb6cbab911a225f))
+* hooks ([488b299](https://github.com/Coral-Protocol/component-library/commit/488b299099efcf4095ca659447f744c7f9057a96))
+* move component lib page to root ([2ea7103](https://github.com/Coral-Protocol/component-library/commit/2ea7103acbec96c694c378b54f305fa56aee3bfa))
+* moved table ([19f3b2f](https://github.com/Coral-Protocol/component-library/commit/19f3b2f04d65adb6ba2354d4782b17532497eba5))
+* remove $lib ([e78e4d7](https://github.com/Coral-Protocol/component-library/commit/e78e4d768260d994d67ee8876590bb9581da9c42))
+* remove font headings ([#22](https://github.com/Coral-Protocol/component-library/issues/22)) ([25db135](https://github.com/Coral-Protocol/component-library/commit/25db135afaf4ccfb3c604f0401e6924b35ef9bae))
+* removed css imports ([#26](https://github.com/Coral-Protocol/component-library/issues/26)) ([9ff13df](https://github.com/Coral-Protocol/component-library/commit/9ff13dfa5a5ae7121f6832bb3f6ab4f6fe814718))
+* removed rando forced urbanist on accordians ([#19](https://github.com/Coral-Protocol/component-library/issues/19)) ([db1b92f](https://github.com/Coral-Protocol/component-library/commit/db1b92f6b9ca9f80ebd825c3de0292609c9031e8))
+* restored default tabs with updates ([533cc93](https://github.com/Coral-Protocol/component-library/commit/533cc9305c3ba8ca8c145dff7256a168cc51a475))
+* root import ([6a4e212](https://github.com/Coral-Protocol/component-library/commit/6a4e21221002437b06f12e72af65f6a53dad1698))
+* svelte check issues ([dc77c69](https://github.com/Coral-Protocol/component-library/commit/dc77c69e61e2c6742f699cbcd9b92bd6376246a9))
+* tab content ([0a78ffa](https://github.com/Coral-Protocol/component-library/commit/0a78ffaed36971c577215526df0e6a96a5c3ce6b))
+* theme css comment ([fba7939](https://github.com/Coral-Protocol/component-library/commit/fba7939c3b4c84e5aa20cb09c1b48fea9f7d8da4))
+* tooltip preview + fix + branding color on light mode ([#33](https://github.com/Coral-Protocol/component-library/issues/33)) ([73d0a53](https://github.com/Coral-Protocol/component-library/commit/73d0a532b0a3400fb83aa87431a97b57e82d182f))
+* type export ([fa22a95](https://github.com/Coral-Protocol/component-library/commit/fa22a95ffed7cac8bb1050db7bcb92d60d4ea44b))
+
 ## [1.8.0](https://github.com/Coral-Protocol/component-library/compare/v1.7.3...v1.8.0) (2026-05-07)
 
 
