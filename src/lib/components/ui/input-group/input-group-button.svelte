@@ -20,11 +20,12 @@
 </script>
 
 <script lang="ts">
-	import { cn } from "@coral-os/component-library/utils.js";
+	import { cn } from "$lib/utils.js";
 	import type { ComponentProps } from "svelte";
-	import { Button } from "@coral-os/component-library/components/ui/button/index.js";
+	import { Button } from "$lib/components/ui/button/index.js";
 
 	let {
+		ref = $bindable(null),
 		class: className,
 		children,
 		type = "button",
@@ -37,6 +38,7 @@
 </script>
 
 <Button
+	bind:ref
 	{type}
 	data-size={size}
 	{variant}
