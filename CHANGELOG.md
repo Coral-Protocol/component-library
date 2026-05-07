@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/Coral-Protocol/component-library/compare/v2.0.0...v2.1.0) (2026-05-07)
+
+
+### Features
+
+* radio group ([a5d5564](https://github.com/Coral-Protocol/component-library/commit/a5d556434c03b5c8766c9c37f068a92853cd8350))
+
 ## [2.0.0](https://github.com/Coral-Protocol/component-library/compare/v1.8.0...v2.0.0) (2026-05-07)
 
 
