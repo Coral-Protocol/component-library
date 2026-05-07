@@ -6,6 +6,7 @@
 	import Colors from './components/custom/colors.svelte';
 	import Tabs from './components/tabs.svelte';
 	import Accordion from './components/accordion.svelte';
+	import Alltemp from './components/custom/alltemp.svelte';
 </script>
 
 <main class="mx-[5%] flex flex-col gap-8 py-8 lg:mx-auto lg:w-4/5">
@@ -16,4 +17,5 @@
 	<Accordion />
 	<Combobox />
 	<Colors />
+	<Alltemp />
 </main>
