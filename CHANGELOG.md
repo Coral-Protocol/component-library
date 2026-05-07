@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/Coral-Protocol/component-library/compare/v2.1.0...v2.1.1) (2026-05-07)
+
+
+### Bug Fixes
+
+* input group update for cloud ([93a7b1d](https://github.com/Coral-Protocol/component-library/commit/93a7b1d5b1a772da2551e3ee9a03302050482132))
+
 ## [2.1.0](https://github.com/Coral-Protocol/component-library/compare/v2.0.0...v2.1.0) (2026-05-07)
 
 
