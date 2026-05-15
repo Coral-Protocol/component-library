@@ -21,152 +21,214 @@
 	import { Badge } from '$lib/components/ui/badge/index.js';
 </script>
 
-<section class="flex flex-wrap gap-8">
-	<Card.Root>
-		<Card.Header>
-			<Card.Title>Card Title</Card.Title>
-			<Card.Description>Card Description</Card.Description>
-		</Card.Header>
-		<Card.Content>
-			<p>Card Content</p>
-		</Card.Content>
-		<Card.Footer>
-			<p>Card Footer</p>
-		</Card.Footer>
-	</Card.Root>
+<section class="grid gap-10">
+	<!-- CARD -->
+	<div class="space-y-3">
+		<h2 class="text-lg font-semibold">Card</h2>
+		<Card.Root>
+			<Card.Header>
+				<Card.Title>Card Title</Card.Title>
+				<Card.Description>Card Description</Card.Description>
+			</Card.Header>
+			<Card.Content>
+				<p>Card Content</p>
+			</Card.Content>
+			<Card.Footer>
+				<p>Card Footer</p>
+			</Card.Footer>
+		</Card.Root>
+	</div>
 
-	<Tabs.Root value="account" class="w-[400px]">
-		<Tabs.List>
-			<Tabs.Trigger value="account">Account</Tabs.Trigger>
-			<Tabs.Trigger value="password">Password</Tabs.Trigger>
-		</Tabs.List>
-		<Tabs.Content value="account">Make changes to your account here.</Tabs.Content>
-		<Tabs.Content value="password">Change your password here.</Tabs.Content>
-	</Tabs.Root>
+	<!-- TABS -->
+	<div class="space-y-3">
+		<h2 class="text-lg font-semibold">Tabs</h2>
+		<Tabs.Root value="account" class="w-[400px]">
+			<Tabs.List>
+				<Tabs.Trigger value="account">Account</Tabs.Trigger>
+				<Tabs.Trigger value="password">Password</Tabs.Trigger>
+			</Tabs.List>
+			<Tabs.Content value="account">Make changes to your account here.</Tabs.Content>
+			<Tabs.Content value="password">Change your password here.</Tabs.Content>
+		</Tabs.Root>
+	</div>
 
-	<Alert.Root>
-		<Alert.Title>Heads up!</Alert.Title>
-		<Alert.Description>You can add components to your app using the cli.</Alert.Description>
-	</Alert.Root>
+	<!-- ALERT -->
+	<div class="space-y-3">
+		<h2 class="text-lg font-semibold">Alert</h2>
+		<Alert.Root>
+			<Alert.Title>Heads up!</Alert.Title>
+			<Alert.Description>You can add components to your app using the CLI.</Alert.Description>
+		</Alert.Root>
+	</div>
 
-	<Badge>Badge</Badge>
+	<!-- BADGES -->
+	<div class="space-y-3">
+		<h2 class="text-lg font-semibold">Badge</h2>
+		<div class="flex flex-wrap gap-2">
+			<Badge>Default</Badge>
+			<Badge variant="destructive">Destructive</Badge>
+			<Badge variant="outline">Outline</Badge>
+			<Badge variant="secondary">Secondary</Badge>
+		</div>
+	</div>
 
-	<Input />
+	<!-- INPUT -->
+	<div class="space-y-3">
+		<h2 class="text-lg font-semibold">Input</h2>
+		<div class="space-y-2">
+			<Label for="email">Email address</Label>
+			<Input id="email" placeholder="you@example.com" />
+		</div>
+	</div>
 
-	<Label for="email">Your email address</Label>
+	<!-- SHEET -->
+	<div class="space-y-3">
+		<h2 class="text-lg font-semibold">Sheet</h2>
+		<Sheet.Root>
+			<Sheet.Trigger>
+				<Button>Open Sheet</Button>
+			</Sheet.Trigger>
+			<Sheet.Content>
+				<Sheet.Header>
+					<Sheet.Title>Confirm Action</Sheet.Title>
+					<Sheet.Description>This action cannot be undone.</Sheet.Description>
+				</Sheet.Header>
+			</Sheet.Content>
+		</Sheet.Root>
+	</div>
 
-	<Sheet.Root>
-		<Sheet.Trigger>Open</Sheet.Trigger>
-		<Sheet.Content>
-			<Sheet.Header>
-				<Sheet.Title>Are you sure absolutely sure?</Sheet.Title>
-				<Sheet.Description>
-					This action cannot be undone. This will permanently delete your account and remove your
-					data from our servers.
-				</Sheet.Description>
-			</Sheet.Header>
-		</Sheet.Content>
-	</Sheet.Root>
+	<!-- TABLE -->
+	<div class="space-y-3">
+		<h2 class="text-lg font-semibold">Table</h2>
+		<Table.Root>
+			<Table.Caption>Recent invoices</Table.Caption>
+			<Table.Header>
+				<Table.Row>
+					<Table.Head>Invoice</Table.Head>
+					<Table.Head>Status</Table.Head>
+					<Table.Head>Method</Table.Head>
+					<Table.Head class="text-right">Amount</Table.Head>
+				</Table.Row>
+			</Table.Header>
+			<Table.Body>
+				<Table.Row>
+					<Table.Cell>INV001</Table.Cell>
+					<Table.Cell>Paid</Table.Cell>
+					<Table.Cell>Card</Table.Cell>
+					<Table.Cell class="text-right">0.00</Table.Cell>
+				</Table.Row>
+			</Table.Body>
+		</Table.Root>
+	</div>
 
-	<Table.Root>
-		<Table.Caption>A list of your recent invoices.</Table.Caption>
-		<Table.Header>
-			<Table.Row>
-				<Table.Head class="w-[100px]">Invoice</Table.Head>
-				<Table.Head>Status</Table.Head>
-				<Table.Head>Method</Table.Head>
-				<Table.Head class="text-right">Amount</Table.Head>
-			</Table.Row>
-		</Table.Header>
-		<Table.Body>
-			<Table.Row>
-				<Table.Cell class="font-medium">INV001</Table.Cell>
-				<Table.Cell>Paid</Table.Cell>
-				<Table.Cell>Credit Card</Table.Cell>
-				<Table.Cell class="text-right">.00</Table.Cell>
-			</Table.Row>
-		</Table.Body>
-	</Table.Root>
+	<!-- AVATAR -->
+	<div class="space-y-3">
+		<h2 class="text-lg font-semibold">Avatar</h2>
+		<Avatar.Root>
+			<Avatar.Image src="https://github.com/shadcn.png" alt="Avatar" />
+			<Avatar.Fallback>CN</Avatar.Fallback>
+		</Avatar.Root>
+		<Avatar.Root>
+			<Avatar.Image src="" alt="Avatar" />
+			<Avatar.Fallback>CN</Avatar.Fallback>
+		</Avatar.Root>
+	</div>
 
-	<Avatar.Root>
-		<Avatar.Image src="https://github.com/shadcn.png" alt="@shadcn" />
-		<Avatar.Fallback>CN</Avatar.Fallback>
-	</Avatar.Root>
+	<!-- DIALOG -->
+	<div class="space-y-3">
+		<h2 class="text-lg font-semibold">Dialog</h2>
+		<Dialog.Root>
+			<Dialog.Trigger>
+				<Button>Open Dialog</Button>
+			</Dialog.Trigger>
+			<Dialog.Content>
+				<Dialog.Header>
+					<Dialog.Title>Confirm deletion</Dialog.Title>
+					<Dialog.Description>This action cannot be undone.</Dialog.Description>
+				</Dialog.Header>
+			</Dialog.Content>
+		</Dialog.Root>
+	</div>
 
-	<Button>Button</Button>
+	<!-- SELECT -->
+	<div class="space-y-3">
+		<h2 class="text-lg font-semibold">Select</h2>
+		<Select.Root type="single">
+			<Select.Trigger class="w-[180px]" placeholder="Choose theme" />
+			<Select.Content>
+				<Select.Item value="light">Light</Select.Item>
+				<Select.Item value="dark">Dark</Select.Item>
+				<Select.Item value="system">System</Select.Item>
+			</Select.Content>
+		</Select.Root>
+	</div>
 
-	<Dialog.Root>
-		<Dialog.Trigger>Open</Dialog.Trigger>
-		<Dialog.Content>
-			<Dialog.Header>
-				<Dialog.Title>Are you sure absolutely sure?</Dialog.Title>
-				<Dialog.Description>
-					This action cannot be undone. This will permanently delete your account and remove your
-					data from our servers.
-				</Dialog.Description>
-			</Dialog.Header>
-		</Dialog.Content>
-	</Dialog.Root>
+	<!-- COMMAND -->
+	<div class="space-y-3">
+		<h2 class="text-lg font-semibold">Command</h2>
+		<Command.Root>
+			<Command.Input placeholder="Search..." />
+			<Command.List>
+				<Command.Empty>No results found.</Command.Empty>
+				<Command.Group heading="Suggestions">
+					<Command.Item>Calendar</Command.Item>
+					<Command.Item>Calculator</Command.Item>
+				</Command.Group>
+			</Command.List>
+		</Command.Root>
+	</div>
 
-	<Select.Root type="single">
-		<Select.Trigger class="w-[180px]"></Select.Trigger>
-		<Select.Content>
-			<Select.Item value="light">Light</Select.Item>
-			<Select.Item value="dark">Dark</Select.Item>
-			<Select.Item value="system">System</Select.Item>
-		</Select.Content>
-	</Select.Root>
+	<!-- MENUBAR -->
+	<div class="space-y-3">
+		<h2 class="text-lg font-semibold">Menubar</h2>
+		<Menubar.Root>
+			<Menubar.Menu>
+				<Menubar.Trigger>File</Menubar.Trigger>
+				<Menubar.Content>
+					<Menubar.Item>New Tab</Menubar.Item>
+					<Menubar.Item>New Window</Menubar.Item>
+					<Menubar.Separator />
+					<Menubar.Item>Print</Menubar.Item>
+				</Menubar.Content>
+			</Menubar.Menu>
+		</Menubar.Root>
+	</div>
 
-	<Command.Root>
-		<Command.Input placeholder="Type a command or search..." />
-		<Command.List>
-			<Command.Empty>No results found.</Command.Empty>
-			<Command.Group heading="Suggestions">
-				<Command.Item>Calendar</Command.Item>
-				<Command.Item>Search Emoji</Command.Item>
-				<Command.Item>Calculator</Command.Item>
-			</Command.Group>
-			<Command.Separator />
-			<Command.Group heading="Settings">
-				<Command.Item>Profile</Command.Item>
-				<Command.Item>Billing</Command.Item>
-				<Command.Item>Settings</Command.Item>
-			</Command.Group>
-		</Command.List>
-	</Command.Root>
+	<!-- POPOVER -->
+	<div class="space-y-3">
+		<h2 class="text-lg font-semibold">Popover</h2>
+		<Popover.Root>
+			<Popover.Trigger>
+				<Button>Open Popover</Button>
+			</Popover.Trigger>
+			<Popover.Content>Popover content goes here.</Popover.Content>
+		</Popover.Root>
+	</div>
 
-	<Menubar.Root>
-		<Menubar.Menu>
-			<Menubar.Trigger>File</Menubar.Trigger>
-			<Menubar.Content>
-				<Menubar.Item>
-					New Tab
-					<Menubar.Shortcut>⌘T</Menubar.Shortcut>
-				</Menubar.Item>
-				<Menubar.Item>New Window</Menubar.Item>
-				<Menubar.Separator />
-				<Menubar.Item>Share</Menubar.Item>
-				<Menubar.Separator />
-				<Menubar.Item>Print</Menubar.Item>
-			</Menubar.Content>
-		</Menubar.Menu>
-	</Menubar.Root>
+	<!-- TOOLTIP -->
+	<div class="space-y-3">
+		<h2 class="text-lg font-semibold">Tooltip</h2>
+		<Tooltip.Provider>
+			<Tooltip.Root>
+				<Tooltip.Trigger>
+					<Button variant="outline">Hover me</Button>
+				</Tooltip.Trigger>
+				<Tooltip.Content>
+					<p>Helpful tooltip text</p>
+				</Tooltip.Content>
+			</Tooltip.Root>
+		</Tooltip.Provider>
+	</div>
 
-	<Popover.Root>
-		<Popover.Trigger>Open</Popover.Trigger>
-		<Popover.Content>Place content for the popover here.</Popover.Content>
-	</Popover.Root>
+	<!-- SKELETON -->
+	<div class="space-y-3">
+		<h2 class="text-lg font-semibold">Skeleton</h2>
+		<Skeleton class="h-[20px] w-[120px] rounded-full" />
+	</div>
 
-	<Tooltip.Provider>
-		<Tooltip.Root>
-			<Tooltip.Trigger>Hover</Tooltip.Trigger>
-			<Tooltip.Content>
-				<p>Add to library</p>
-			</Tooltip.Content>
-		</Tooltip.Root>
-	</Tooltip.Provider>
-
-	<Skeleton class="h-[20px] w-[100px] rounded-full" />
-
-	<Textarea />
+	<!-- TEXTAREA -->
+	<div class="space-y-3">
+		<h2 class="text-lg font-semibold">Textarea</h2>
+		<Textarea placeholder="Type something..." />
+	</div>
 </section>
