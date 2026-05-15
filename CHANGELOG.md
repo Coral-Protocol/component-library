@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.4](https://github.com/Coral-Protocol/component-library/compare/v2.1.3...v2.1.4) (2026-05-15)
+
+
+### Bug Fixes
+
+* badge visible now + better comp demo page ([014c22b](https://github.com/Coral-Protocol/component-library/commit/014c22bc19bd430b0bd71c5fcbba5f63088ea521))
+
 ## [2.1.3](https://github.com/Coral-Protocol/component-library/compare/v2.1.2...v2.1.3) (2026-05-07)
 
 
