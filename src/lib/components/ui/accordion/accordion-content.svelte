@@ -17,12 +17,12 @@
 <AccordionPrimitive.Content
 	bind:ref
 	data-slot="accordion-content"
-	class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down bg-sidebar/80 overflow-hidden text-sm"
+	class="overflow-hidden bg-sidebar text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
 	{...restProps}
 >
 	<div class="{cn('pt-0 ', className)} p-4">
 		{#if separator}
-			<Separator class="from-accent to-secondary mb-4 bg-gradient-to-r" />
+			<Separator class="mb-4 bg-gradient-to-r from-accent to-secondary" />
 		{/if}
 
 		{@render children?.()}
