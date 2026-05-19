@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.5](https://github.com/Coral-Protocol/component-library/compare/v2.1.4...v2.1.5) (2026-05-19)
+
+
+### Bug Fixes
+
+* remove opacity from accordion ([2a5b845](https://github.com/Coral-Protocol/component-library/commit/2a5b8456dd3f51024d77729e51985f9397a7caf6))
+
 ## [2.1.4](https://github.com/Coral-Protocol/component-library/compare/v2.1.3...v2.1.4) (2026-05-15)
 
 
