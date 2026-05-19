@@ -17,7 +17,7 @@
 <AccordionPrimitive.Content
 	bind:ref
 	data-slot="accordion-content"
-	class="overflow-hidden bg-sidebar text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+	class="overflow-hidden bg-sidebar/80 text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
 	{...restProps}
 >
 	<div class="{cn('pt-0 ', className)} p-4">
