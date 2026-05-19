@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.6](https://github.com/Coral-Protocol/component-library/compare/v2.1.5...v2.1.6) (2026-05-19)
+
+
+### Bug Fixes
+
+* nvm it made more sense earlier ([ce4f675](https://github.com/Coral-Protocol/component-library/commit/ce4f675b9c71c51584f7dafc4177ab20270251c6))
+
 ## [2.1.5](https://github.com/Coral-Protocol/component-library/compare/v2.1.4...v2.1.5) (2026-05-19)
 
 
