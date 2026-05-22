@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.7](https://github.com/Coral-Protocol/component-library/compare/v2.1.6...v2.1.7) (2026-05-22)
+
+
+### Bug Fixes
+
+* remove text-xs on tables ([fced0f0](https://github.com/Coral-Protocol/component-library/commit/fced0f0102dd675d54a55114e306db3c24ddda59))
+
 ## [2.1.6](https://github.com/Coral-Protocol/component-library/compare/v2.1.5...v2.1.6) (2026-05-19)
 
 
