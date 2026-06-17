@@ -19,6 +19,7 @@
 	import { Button } from '$lib/components/ui/button/index.js';
 	import * as Accordion from '$lib/components/ui/accordion/index.js';
 	import { Badge } from '$lib/components/ui/badge/index.js';
+	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
 </script>
 
 <section class="grid gap-10">
@@ -230,5 +231,23 @@
 	<div class="space-y-3">
 		<h2 class="text-lg font-semibold">Textarea</h2>
 		<Textarea placeholder="Type something..." />
+	</div>
+
+	<!-- DROPDOWN MENU -->
+	<div class="space-y-3">
+		<h2 class="text-lg font-semibold">Dropdown Menu</h2>
+		<DropdownMenu.Root>
+			<DropdownMenu.Trigger>Open</DropdownMenu.Trigger>
+			<DropdownMenu.Content>
+				<DropdownMenu.Group>
+					<DropdownMenu.Label>My Account</DropdownMenu.Label>
+					<DropdownMenu.Separator />
+					<DropdownMenu.Item>Profile</DropdownMenu.Item>
+					<DropdownMenu.Item>Billing</DropdownMenu.Item>
+					<DropdownMenu.Item>Team</DropdownMenu.Item>
+					<DropdownMenu.Item>Subscription</DropdownMenu.Item>
+				</DropdownMenu.Group>
+			</DropdownMenu.Content>
+		</DropdownMenu.Root>
 	</div>
 </section>

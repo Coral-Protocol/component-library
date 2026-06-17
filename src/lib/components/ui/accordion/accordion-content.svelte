@@ -1,30 +1,16 @@
 <script lang="ts">
 	import { Accordion as AccordionPrimitive } from 'bits-ui';
-	import { Separator } from '@coral-os/component-library/components/ui/separator/index.js';
-	import { cn, type WithoutChild } from '@coral-os/component-library/utils.js';
-
+	import { cn } from '$lib/utils.js';
 	let {
 		ref = $bindable(null),
 		class: className,
-		separator = false,
-		children,
 		...restProps
-	}: WithoutChild<AccordionPrimitive.ContentProps> & {
-		separator?: boolean;
-	} = $props();
+	}: AccordionPrimitive.ItemProps = $props();
 </script>
 
-<AccordionPrimitive.Content
+<AccordionPrimitive.Item
 	bind:ref
-	data-slot="accordion-content"
-	class="overflow-hidden bg-sidebar/80 text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+	data-slot="accordion-item"
+	class={cn('not-last:border-b', className)}
 	{...restProps}
->
-	<div class="{cn('pt-0 ', className)} p-4">
-		{#if separator}
-			<Separator class="mb-4 bg-gradient-to-r from-accent to-secondary" />
-		{/if}
-
-		{@render children?.()}
-	</div>
-</AccordionPrimitive.Content>
+/>
