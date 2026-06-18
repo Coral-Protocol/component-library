@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.5](https://github.com/Coral-Protocol/component-library/compare/v2.2.4...v2.2.5) (2026-06-18)
+
+
+### Bug Fixes
+
+* tooltip required astrisk better render ([e4d4101](https://github.com/Coral-Protocol/component-library/commit/e4d410110ce70ffcb2cad7b5ca787ea71170a51b))
+
 ## [2.2.4](https://github.com/Coral-Protocol/component-library/compare/v2.2.3...v2.2.4) (2026-06-18)
 
 
