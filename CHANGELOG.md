@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.6](https://github.com/Coral-Protocol/component-library/compare/v2.2.5...v2.2.6) (2026-06-18)
+
+
+### Bug Fixes
+
+* tooltip overflow fixes ([da169da](https://github.com/Coral-Protocol/component-library/commit/da169da51fd8d90e8fd34d42205cf5e5d45b50c7))
+
 ## [2.2.5](https://github.com/Coral-Protocol/component-library/compare/v2.2.4...v2.2.5) (2026-06-18)
 
 
