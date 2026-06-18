@@ -19,5 +19,5 @@
 	<Combobox />
 	<Colors />
 	<Separator />
-	<Alltemp />
+	<!-- <Alltemp /> -->
 </main>
