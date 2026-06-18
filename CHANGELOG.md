@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/Coral-Protocol/component-library/compare/v2.2.0...v2.2.1) (2026-06-18)
+
+
+### Bug Fixes
+
+* accordion icons ([702feaf](https://github.com/Coral-Protocol/component-library/commit/702feaf4f98429a54f49a7d38f22ac2ac1053918))
+
 ## [2.2.0](https://github.com/Coral-Protocol/component-library/compare/v2.1.7...v2.2.0) (2026-06-18)
 
 
