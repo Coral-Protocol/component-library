@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { Accordion as AccordionPrimitive } from 'bits-ui';
-	import { cn, type WithoutChild } from '$lib/utils.js';
-	import ChevronDownIcon from '@lucide/svelte/icons/chevron-down';
-	import ChevronUpIcon from '@lucide/svelte/icons/chevron-up';
+	import { Accordion as AccordionPrimitive } from "bits-ui";
+	import { cn, type WithoutChild } from "@coral-os/component-library/utils.js";
+	import CaretDownIcon from 'phosphor-svelte/lib/CaretDown';
+	import CaretUpIcon from 'phosphor-svelte/lib/CaretUp';
+
 	let {
 		ref = $bindable(null),
 		class: className,
@@ -10,7 +11,7 @@
 		children,
 		...restProps
 	}: WithoutChild<AccordionPrimitive.TriggerProps> & {
-		level?: AccordionPrimitive.HeaderProps['level'];
+		level?: AccordionPrimitive.HeaderProps["level"];
 	} = $props();
 </script>
 
@@ -19,19 +20,13 @@
 		data-slot="accordion-trigger"
 		bind:ref
 		class={cn(
-			'group/accordion-trigger relative flex flex-1 items-start justify-between rounded-md border border-transparent py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:after:border-ring disabled:pointer-events-none disabled:opacity-50 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground',
+			"**:data-[slot=accordion-trigger-icon]:text-muted-foreground gap-6 p-2 text-left text-xs/relaxed font-medium hover:underline **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 group/accordion-trigger relative flex flex-1 items-start justify-between border border-transparent transition-all outline-none disabled:pointer-events-none disabled:opacity-50",
 			className
 		)}
 		{...restProps}
 	>
 		{@render children?.()}
-		<ChevronDownIcon
-			data-slot="accordion-trigger-icon"
-			class="**:data-[slot=accordion-trigger-icon]:size-4-icon pointer-events-none shrink-0 rounded-md py-4 text-left text-sm font-medium group-aria-expanded/accordion-trigger:hidden hover:underline focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:after:border-ring **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:text-muted-foreground"
-		/>
-		<ChevronUpIcon
-			data-slot="accordion-trigger-icon"
-			class="cn-accordion-trigger-icon pointer-events-none hidden shrink-0 group-aria-expanded/accordion-trigger:inline"
-		/>
+		<CaretDownIcon data-slot="accordion-trigger-icon" class="cn-accordion-trigger-icon pointer-events-none shrink-0 group-aria-expanded/accordion-trigger:hidden" />
+		<CaretUpIcon data-slot="accordion-trigger-icon" class="cn-accordion-trigger-icon pointer-events-none hidden shrink-0 group-aria-expanded/accordion-trigger:inline" />
 	</AccordionPrimitive.Trigger>
 </AccordionPrimitive.Header>

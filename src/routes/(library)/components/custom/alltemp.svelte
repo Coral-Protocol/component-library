@@ -13,11 +13,8 @@
 	import * as Menubar from '$lib/components/ui/menubar/index.js';
 	import * as Popover from '$lib/components/ui/popover/index.js';
 	import * as Tooltip from '$lib/components/ui/tooltip/index.js';
-	import { Checkbox } from '$lib/components/ui/checkbox/index.js';
 	import { Skeleton } from '$lib/components/ui/skeleton/index.js';
 	import { Textarea } from '$lib/components/ui/textarea/index.js';
-	import { Button } from '$lib/components/ui/button/index.js';
-	import * as Accordion from '$lib/components/ui/accordion/index.js';
 	import { Badge } from '$lib/components/ui/badge/index.js';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
 </script>
@@ -86,9 +83,7 @@
 	<div class="space-y-3">
 		<h2 class="text-lg font-semibold">Sheet</h2>
 		<Sheet.Root>
-			<Sheet.Trigger>
-				<Button>Open Sheet</Button>
-			</Sheet.Trigger>
+			<Sheet.Trigger>Open Sheet</Sheet.Trigger>
 			<Sheet.Content>
 				<Sheet.Header>
 					<Sheet.Title>Confirm Action</Sheet.Title>
@@ -139,9 +134,7 @@
 	<div class="space-y-3">
 		<h2 class="text-lg font-semibold">Dialog</h2>
 		<Dialog.Root>
-			<Dialog.Trigger>
-				<Button>Open Dialog</Button>
-			</Dialog.Trigger>
+			<Dialog.Trigger>Open Dialog</Dialog.Trigger>
 			<Dialog.Content>
 				<Dialog.Header>
 					<Dialog.Title>Confirm deletion</Dialog.Title>
@@ -199,9 +192,7 @@
 	<div class="space-y-3">
 		<h2 class="text-lg font-semibold">Popover</h2>
 		<Popover.Root>
-			<Popover.Trigger>
-				<Button>Open Popover</Button>
-			</Popover.Trigger>
+			<Popover.Trigger>Open Popover</Popover.Trigger>
 			<Popover.Content>Popover content goes here.</Popover.Content>
 		</Popover.Root>
 	</div>
@@ -211,9 +202,7 @@
 		<h2 class="text-lg font-semibold">Tooltip</h2>
 		<Tooltip.Provider>
 			<Tooltip.Root>
-				<Tooltip.Trigger>
-					<Button variant="outline">Hover me</Button>
-				</Tooltip.Trigger>
+				<Tooltip.Trigger>Hover me</Tooltip.Trigger>
 				<Tooltip.Content>
 					<p>Helpful tooltip text</p>
 				</Tooltip.Content>
