@@ -2,3 +2,12 @@
 @import 'tw-animate-css';
 
 @import '../lib/theme.css';
+
+
+@theme inline {
+	--font-sans: 'Inter', ui-sans-serif, sans-serif;
+	--font-brand: 'Oxanium', ui-monospace, monospace, system-ui;
+	--font-mono: 'JetBrains Mono', ui-monospace, monospace, system-ui;
+
+
+}

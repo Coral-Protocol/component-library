@@ -17,6 +17,7 @@
 	import { Textarea } from '$lib/components/ui/textarea/index.js';
 	import { Badge } from '$lib/components/ui/badge/index.js';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
+	import { TooltipLabel } from '@coral-os/component-library';
 </script>
 
 <section class="grid gap-10">
@@ -238,5 +239,30 @@
 				</DropdownMenu.Group>
 			</DropdownMenu.Content>
 		</DropdownMenu.Root>
+	</div>
+
+	<div class="space-y-3">
+		<h2 class="text-lg font-semibold">Custom TooltipLabel comp</h2>
+		<p>Description</p>
+		<TooltipLabel
+			tooltip={'Optional agent description shared with other agents'}
+			class="m-0 max-w-1/4"
+			>Description
+		</TooltipLabel>
+	</div>
+
+	<div class="space-y-3">
+		<Label class="truncate">"p", "g", "y", "q"</Label>
+		<TooltipLabel
+			title="Force kill agent"
+			tooltip="If this is true, the agent will be killed immediately. If this is false, the agent will only be killed if the claim requests for automatic closing."
+			extra={{
+				required: true,
+				type: 'boolean'
+			}}
+			class="max-w-1/4 min-w-1/4 "
+		>
+			"p", "g", "y", "q"
+		</TooltipLabel>
 	</div>
 </section>

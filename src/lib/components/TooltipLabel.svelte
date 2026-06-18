@@ -40,17 +40,13 @@
 				<Label
 					{...props}
 					{...rest}
-					class="{className} relative m-0! inline w-full cursor-help content-center truncate"
+					class="{className} relative m-0! inline w-full cursor-help content-center truncate leading-5"
 				>
-					<span class="flex items-center overflow-hidden">
-						<span class="truncate text-xs font-normal">
-							{@render labelChild?.()}
-						</span>
+					{@render labelChild?.()}
 
-						{#if extra && extra.required === true}
-							<span class="ml-1 shrink-0 text-destructive select-none">*</span>
-						{/if}
-					</span>
+					{#if extra && extra.required === true}
+						<span class="ml-1 shrink-0 text-destructive select-none">*</span>
+					{/if}
 				</Label>
 			{/snippet}
 		</Tooltip.Trigger>
