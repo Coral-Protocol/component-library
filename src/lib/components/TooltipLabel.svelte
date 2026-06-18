@@ -40,15 +40,15 @@
 				<Label
 					{...props}
 					{...rest}
-					class="{className} relative !m-0 inline w-full cursor-help content-center truncate"
+					class="{className} relative m-0! inline w-full cursor-help content-center truncate"
 				>
 					<span class="flex items-center overflow-hidden">
-						<span class="truncate">
+						<span class="truncate text-xs font-normal">
 							{@render labelChild?.()}
 						</span>
 
 						{#if extra && extra.required === true}
-							<span class="text-destructive ml-1 flex-shrink-0 select-none">*</span>
+							<span class="ml-1 shrink-0 text-destructive select-none">*</span>
 						{/if}
 					</span>
 				</Label>
