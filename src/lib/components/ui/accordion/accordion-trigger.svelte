@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { Accordion as AccordionPrimitive } from 'bits-ui';
 	import { cn, type WithoutChild } from '@coral-os/component-library/utils.js';
-	import CaretDownIcon from 'phosphor-svelte/lib/CaretDown';
-	import CaretUpIcon from 'phosphor-svelte/lib/CaretUp';
+	import ChevronDownIcon from '@lucide/svelte/icons/chevron-down';
 
 	let {
 		ref = $bindable(null),
@@ -20,19 +19,15 @@
 		data-slot="accordion-trigger"
 		bind:ref
 		class={cn(
-			'group/accordion-trigger relative flex flex-1 items-start justify-between gap-6 border border-transparent p-2 text-left text-xs/relaxed font-medium transition-all outline-none hover:underline disabled:pointer-events-none disabled:opacity-50 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground',
+			'group/accordion-trigger relative flex flex-1 items-start justify-between gap-6 border border-transparent p-2 text-left font-medium transition-all outline-none hover:bg-accent/80 disabled:pointer-events-none disabled:opacity-50 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground',
 			className
 		)}
 		{...restProps}
 	>
 		{@render children?.()}
-		<CaretDownIcon
+		<ChevronDownIcon
 			data-slot="accordion-trigger-icon"
-			class="cn-accordion-trigger-icon pointer-events-none shrink-0 group-aria-expanded/accordion-trigger:hidden"
-		/>
-		<CaretUpIcon
-			data-slot="accordion-trigger-icon"
-			class="cn-accordion-trigger-icon pointer-events-none hidden shrink-0 group-aria-expanded/accordion-trigger:inline"
+			class="cn-accordion-trigger-icon pointer-events-none shrink-0 group-aria-expanded/accordion-trigger:rotate-180"
 		/>
 	</AccordionPrimitive.Trigger>
 </AccordionPrimitive.Header>
