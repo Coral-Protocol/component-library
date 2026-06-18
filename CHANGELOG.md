@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/Coral-Protocol/component-library/compare/v2.2.7...v2.3.0) (2026-06-18)
+
+
+### Features
+
+* sacrilege seamless variant for tabs ([68367fc](https://github.com/Coral-Protocol/component-library/commit/68367fc4c74d58d897559b37cc19db70134a3d85))
+
 ## [2.2.7](https://github.com/Coral-Protocol/component-library/compare/v2.2.6...v2.2.7) (2026-06-18)
 
 
