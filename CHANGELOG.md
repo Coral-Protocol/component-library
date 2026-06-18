@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.2.4](https://github.com/Coral-Protocol/component-library/compare/v2.2.3...v2.2.4) (2026-06-18)
+
+
+### Bug Fixes
+
+* changed tooltip label text to be smaller and also not bold ([b20265c](https://github.com/Coral-Protocol/component-library/commit/b20265ccdff595a17597a44ed88bc80315c5fe80))
+* fix to tooltip label cropping  and added fonts ([338e796](https://github.com/Coral-Protocol/component-library/commit/338e796c18b802edfb58d180cd5f29efb72a09b1))
+
 ## [2.2.3](https://github.com/Coral-Protocol/component-library/compare/v2.2.2...v2.2.3) (2026-06-18)
 
 
