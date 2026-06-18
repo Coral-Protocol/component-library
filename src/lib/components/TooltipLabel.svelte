@@ -40,7 +40,7 @@
 				<Label
 					{...props}
 					{...rest}
-					class="{className} relative m-0! flex w-full cursor-help content-center leading-5"
+					class="relative m-0! inline-grid! w-full cursor-help grid-flow-col content-center justify-start gap-0! leading-5"
 				>
 					<span class="truncate">{@render labelChild?.()}</span>
 
