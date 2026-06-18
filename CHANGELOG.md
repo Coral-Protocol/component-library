@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.2.0](https://github.com/Coral-Protocol/component-library/compare/v2.1.7...v2.2.0) (2026-06-18)
+
+
+### Features
+
+* reset accordion again ([2e7738c](https://github.com/Coral-Protocol/component-library/commit/2e7738c4f4326177acb8f66dbedf2fe3be93782d))
+
+
+### Bug Fixes
+
+* restored original accordions ([7bab778](https://github.com/Coral-Protocol/component-library/commit/7bab778d74be4f67b98a2757ed15c198cfe3b07c))
+
 ## [2.1.7](https://github.com/Coral-Protocol/component-library/compare/v2.1.6...v2.1.7) (2026-05-22)
 
 
