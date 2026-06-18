@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.3](https://github.com/Coral-Protocol/component-library/compare/v2.2.2...v2.2.3) (2026-06-18)
+
+
+### Bug Fixes
+
+* accordion bg ([fe546ab](https://github.com/Coral-Protocol/component-library/commit/fe546ab16c5cd37aafd5dc7f03255c0c8eed925b))
+
 ## [2.2.2](https://github.com/Coral-Protocol/component-library/compare/v2.2.1...v2.2.2) (2026-06-18)
 
 
