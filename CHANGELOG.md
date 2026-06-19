@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.2](https://github.com/Coral-Protocol/component-library/compare/v2.3.1...v2.3.2) (2026-06-19)
+
+
+### Bug Fixes
+
+* added classname into tooltip label ([b80ad50](https://github.com/Coral-Protocol/component-library/commit/b80ad5035c1f3971a3b6e65801e7971387377e1b))
+
 ## [2.3.1](https://github.com/Coral-Protocol/component-library/compare/v2.3.0...v2.3.1) (2026-06-19)
 
 
