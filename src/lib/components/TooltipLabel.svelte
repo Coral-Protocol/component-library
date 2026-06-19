@@ -4,6 +4,7 @@
 
 	import type { Snippet } from 'svelte';
 	import type { LabelRootProps } from 'bits-ui';
+	import { cn } from '../utils';
 
 	const {
 		tooltip,
@@ -40,7 +41,10 @@
 				<Label
 					{...props}
 					{...rest}
-					class="relative m-0! inline-grid! w-auto cursor-help grid-flow-col content-center justify-start gap-0! leading-5"
+					class={cn(
+						'relative m-0! inline-grid! w-auto cursor-help grid-flow-col content-center justify-start gap-0! leading-5',
+						className
+					)}
 				>
 					<span class="truncate">{@render labelChild?.()}</span>
 
