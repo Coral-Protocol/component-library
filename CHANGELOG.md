@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.1](https://github.com/Coral-Protocol/component-library/compare/v2.3.0...v2.3.1) (2026-06-19)
+
+
+### Bug Fixes
+
+* final fix for seamless tabs + light theme support ([3b751b3](https://github.com/Coral-Protocol/component-library/commit/3b751b3fa79772b8e2fa04aef5d733ddae12ea10))
+
 ## [2.3.0](https://github.com/Coral-Protocol/component-library/compare/v2.2.7...v2.3.0) (2026-06-18)
 
 
