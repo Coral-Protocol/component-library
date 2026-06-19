@@ -6,7 +6,7 @@
 			variant: {
 				default: 'gap-2-list-variant-default bg-muted',
 				line: 'rounded-lg p-[3px] group-data-horizontal/tabs:h-9 data-[variant=line]:rounded-none-variant-line gap-1 bg-transparent',
-				seamless: 'bg-background/80 p-0 w-full justify-start gap-0! border-b'
+				seamless: 'bg-background/40 p-0 w-full justify-start gap-0!'
 			}
 		},
 		defaultVariants: {

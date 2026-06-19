@@ -121,57 +121,62 @@
 
 	<div class="-mb-4 flex w-full max-w-sm flex-col gap-6">
 		seamless variant
-		<Tabs.Root value="account">
-			<Tabs.List variant="seamless">
-				<Tabs.Trigger value="account">Account</Tabs.Trigger>
-				<Tabs.Trigger value="password">Password</Tabs.Trigger>
-			</Tabs.List>
-			<Tabs.Content value="account">
-				<Card.Root class="">
-					<Card.Header>
-						<Card.Title>Account</Card.Title>
-						<Card.Description>
-							Make changes to your account here. Click save when you&apos;re done.
-						</Card.Description>
-					</Card.Header>
-					<Card.Content class="grid gap-6">
-						<div class="grid gap-3">
-							<Label for="tabs-demo-name">Name</Label>
-							<Input id="tabs-demo-name" value="Pedro Duarte" />
-						</div>
-						<div class="grid gap-3">
-							<Label for="tabs-demo-username">Username</Label>
-							<Input id="tabs-demo-username" value="@peduarte" />
-						</div>
-					</Card.Content>
-					<Card.Footer>
-						<Button>Save changes</Button>
-					</Card.Footer>
-				</Card.Root>
-			</Tabs.Content>
-			<Tabs.Content value="password">
-				<Card.Root class="">
-					<Card.Header>
-						<Card.Title>Password</Card.Title>
-						<Card.Description>
-							Change your password here. After saving, you&apos;ll be logged out.
-						</Card.Description>
-					</Card.Header>
-					<Card.Content class="grid gap-6">
-						<div class="grid gap-3">
-							<Label for="tabs-demo-current">Current password</Label>
-							<Input id="tabs-demo-current" type="password" />
-						</div>
-						<div class="grid gap-3">
-							<Label for="tabs-demo-new">New password</Label>
-							<Input id="tabs-demo-new" type="password" />
-						</div>
-					</Card.Content>
-					<Card.Footer>
-						<Button>Save password</Button>
-					</Card.Footer>
-				</Card.Root>
-			</Tabs.Content>
-		</Tabs.Root>
+		<Card.Root class="border-0 py-0">
+			<Tabs.Root value="account">
+				<Tabs.List variant="seamless">
+					<Tabs.Trigger value="account">Account</Tabs.Trigger>
+					<Tabs.Trigger value="password">Password</Tabs.Trigger>
+					<Tabs.Trigger value="" class="pointer-events-none w-full grow"></Tabs.Trigger>
+				</Tabs.List>
+				<Card.Content class="border-t-0 px-0">
+					<Tabs.Content value="account">
+						<Card.Root class="border-t-0">
+							<Card.Header>
+								<Card.Title>Account</Card.Title>
+								<Card.Description>
+									Make changes to your account here. Click save when you&apos;re done.
+								</Card.Description>
+							</Card.Header>
+							<Card.Content class="grid gap-6">
+								<div class="grid gap-3">
+									<Label for="tabs-demo-name">Name</Label>
+									<Input id="tabs-demo-name" value="Pedro Duarte" />
+								</div>
+								<div class="grid gap-3">
+									<Label for="tabs-demo-username">Username</Label>
+									<Input id="tabs-demo-username" value="@peduarte" />
+								</div>
+							</Card.Content>
+							<Card.Footer>
+								<Button>Save changes</Button>
+							</Card.Footer>
+						</Card.Root>
+					</Tabs.Content>
+					<Tabs.Content value="password">
+						<Card.Root class="border-t-0">
+							<Card.Header>
+								<Card.Title>Password</Card.Title>
+								<Card.Description>
+									Change your password here. After saving, you&apos;ll be logged out.
+								</Card.Description>
+							</Card.Header>
+							<Card.Content class="grid gap-6">
+								<div class="grid gap-3">
+									<Label for="tabs-demo-current">Current password</Label>
+									<Input id="tabs-demo-current" type="password" />
+								</div>
+								<div class="grid gap-3">
+									<Label for="tabs-demo-new">New password</Label>
+									<Input id="tabs-demo-new" type="password" />
+								</div>
+							</Card.Content>
+							<Card.Footer>
+								<Button>Save password</Button>
+							</Card.Footer>
+						</Card.Root>
+					</Tabs.Content>
+				</Card.Content>
+			</Tabs.Root>
+		</Card.Root>
 	</div>
 </section>
