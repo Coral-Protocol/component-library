@@ -80,7 +80,7 @@
 		class: cn(
 			commonClass,
 			'border-border rounded-md border outline-none',
-			'focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]',
+			'focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[1px]',
 			'aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive',
 			className,
 			inputClass
