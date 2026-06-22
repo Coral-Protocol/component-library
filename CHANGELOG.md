@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.3.3](https://github.com/Coral-Protocol/component-library/compare/v2.3.2...v2.3.3) (2026-06-22)
+
+
+### Bug Fixes
+
+* accordion trigger text size increase ([44d0e25](https://github.com/Coral-Protocol/component-library/commit/44d0e25b9597532326a01fdf8e043948089c03c1))
+* change all ring size to 1 px from 3 px ([340e909](https://github.com/Coral-Protocol/component-library/commit/340e909f463f88fc8e5713f6147551ec762c764b))
+* tooltip label text weight ([b5136a1](https://github.com/Coral-Protocol/component-library/commit/b5136a1a30191001817aff4b70c4659f3c2717b1))
+
 ## [2.3.2](https://github.com/Coral-Protocol/component-library/compare/v2.3.1...v2.3.2) (2026-06-19)
 
 
