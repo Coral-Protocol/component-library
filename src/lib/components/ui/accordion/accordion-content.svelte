@@ -1,6 +1,13 @@
 <script lang="ts">
-	import { Accordion as AccordionPrimitive } from "bits-ui";
-	import { cn, type WithoutChild } from "@coral-os/component-library/utils.js";
+	import { onMount } from 'svelte';
+	import { Accordion as AccordionPrimitive } from 'bits-ui';
+	import { cn, type WithoutChild } from '@coral-os/component-library/utils.js';
+
+	let mounted = $state(false);
+
+	onMount(() => {
+		mounted = true;
+	});
 
 	let {
 		ref = $bindable(null),
@@ -13,12 +20,15 @@
 <AccordionPrimitive.Content
 	bind:ref
 	data-slot="accordion-content"
-	class="data-open:animate-accordion-down data-closed:animate-accordion-up px-2 text-xs/relaxed overflow-hidden"
+	class={cn(
+		'overflow-hidden px-2 text-xs/relaxed',
+		mounted && 'data-open:animate-accordion-down data-closed:animate-accordion-up'
+	)}
 	{...restProps}
 >
 	<div
 		class={cn(
-			"pt-0 pb-4 [&_a]:hover:text-foreground [&_a]:underline [&_a]:underline-offset-3 [&_p:not(:last-child)]:mb-4",
+			'pt-0 pb-4 [&_a]:underline [&_a]:underline-offset-3 [&_a]:hover:text-foreground [&_p:not(:last-child)]:mb-4',
 			className
 		)}
 	>
