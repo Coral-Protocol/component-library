@@ -46,7 +46,7 @@
 						className
 					)}
 				>
-					<span class="truncate">{@render labelChild?.()}</span>
+					<span class="truncate font-normal">{@render labelChild?.()}</span>
 
 					{#if extra && extra.required === true}
 						<span class="ml-1 shrink-0 text-destructive select-none">*</span>
