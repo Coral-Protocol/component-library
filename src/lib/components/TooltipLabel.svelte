@@ -1,6 +1,7 @@
 <script lang="ts">
 	import * as Tooltip from '@coral-os/component-library/components/ui/tooltip/index.js';
 	import { Label } from '@coral-os/component-library/components/ui/label/index.js';
+	import { Badge } from '@coral-os/component-library/components/ui/badge/index.js'
 
 	import type { Snippet } from 'svelte';
 	import type { LabelRootProps } from 'bits-ui';
@@ -64,18 +65,18 @@
 			{#if extra}
 				{#each Object.entries(extra) as [key, item]}
 					{#if key === 'required' && item === true}
-						<p><span class="font-bold">{key}</span></p>
+						<Badge class="font-bold">{key}<Badge/>
 					{:else if item === true}
-						<p><span class="font-bold">{key}</span></p>
+						<Badge class="font-bold">{key}<Badge/>
 					{:else if typeof item === 'string'}
-						<p><span class="font-bold">{key}:</span> {item}</p>
+						<Badge class="font-bold">{key}: {item}<Badge/>
 					{:else if typeof item === 'object' && item !== null}
-						<p>
+						<Badge>
 							{#if item.showKey !== false}
 								<span class="font-bold">{key}:</span>
 							{/if}
 							{item.value === true ? '' : item.value}
-						</p>
+						<Badge/>
 					{/if}
 				{/each}
 			{/if}
