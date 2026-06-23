@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.2](https://github.com/Coral-Protocol/component-library/compare/v2.4.1...v2.4.2) (2026-06-23)
+
+
+### Bug Fixes
+
+* better tooltip labels and tooltip demo ([2da2dc9](https://github.com/Coral-Protocol/component-library/commit/2da2dc95db84a0dd5df73cbe478a149de4b3c121))
+
 ## [2.4.1](https://github.com/Coral-Protocol/component-library/compare/v2.4.0...v2.4.1) (2026-06-23)
 
 
