@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.3](https://github.com/Coral-Protocol/component-library/compare/v2.4.2...v2.4.3) (2026-06-23)
+
+
+### Bug Fixes
+
+* astrisk higher ([d6cae1a](https://github.com/Coral-Protocol/component-library/commit/d6cae1a568a2319ded294d93c8dd6dc6c319de9b))
+
 ## [2.4.2](https://github.com/Coral-Protocol/component-library/compare/v2.4.1...v2.4.2) (2026-06-23)
 
 
