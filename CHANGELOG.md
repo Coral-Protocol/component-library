@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.5](https://github.com/Coral-Protocol/component-library/compare/v2.4.4...v2.4.5) (2026-06-23)
+
+
+### Bug Fixes
+
+* smaller input group ring ([8e9376c](https://github.com/Coral-Protocol/component-library/commit/8e9376c9157912760c3a803f0abc75b1dc91faf4))
+
 ## [2.4.4](https://github.com/Coral-Protocol/component-library/compare/v2.4.3...v2.4.4) (2026-06-23)
 
 
