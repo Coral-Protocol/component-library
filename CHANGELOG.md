@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.4.0](https://github.com/Coral-Protocol/component-library/compare/v2.3.4...v2.4.0) (2026-06-23)
+
+
+### Features
+
+* tooltips use badges now ([3970b27](https://github.com/Coral-Protocol/component-library/commit/3970b273706bf0cda35145b4e91df626cd3649de))
+
+
+### Bug Fixes
+
+* accordion spacing better ([5950753](https://github.com/Coral-Protocol/component-library/commit/5950753f38d82c5346dd0740edfe343897ccb664))
+
 ## [2.3.4](https://github.com/Coral-Protocol/component-library/compare/v2.3.3...v2.3.4) (2026-06-23)
 
 
