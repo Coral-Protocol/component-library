@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.4](https://github.com/Coral-Protocol/component-library/compare/v2.4.3...v2.4.4) (2026-06-23)
+
+
+### Bug Fixes
+
+* colors ([9b324fe](https://github.com/Coral-Protocol/component-library/commit/9b324fee9d24334d37a6cf07c5e1f9407505551c))
+
 ## [2.4.3](https://github.com/Coral-Protocol/component-library/compare/v2.4.2...v2.4.3) (2026-06-23)
 
 
