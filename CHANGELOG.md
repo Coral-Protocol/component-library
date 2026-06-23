@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.3.4](https://github.com/Coral-Protocol/component-library/compare/v2.3.3...v2.3.4) (2026-06-23)
+
+
+### Bug Fixes
+
+* bump ver ([2732502](https://github.com/Coral-Protocol/component-library/commit/2732502aefea4f933eaaa29c51fd194042565d94))
+* input bg opacity reduced ([5239d5c](https://github.com/Coral-Protocol/component-library/commit/5239d5c3005924a31eef5cf88e776b3dc81f30e5))
+
 ## [2.3.3](https://github.com/Coral-Protocol/component-library/compare/v2.3.2...v2.3.3) (2026-06-22)
 
 
