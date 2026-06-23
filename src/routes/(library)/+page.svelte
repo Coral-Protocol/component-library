@@ -8,6 +8,7 @@
 	import Accordion from './components/accordion.svelte';
 	import Alltemp from './components/custom/alltemp.svelte';
 	import Separator from '$lib/components/ui/separator/separator.svelte';
+	import Tooltips from './components/custom/tooltips.svelte';
 </script>
 
 <main class="mx-[5%] flex flex-col gap-8 py-8 lg:mx-auto lg:w-4/5">
@@ -19,5 +20,6 @@
 	<Combobox />
 	<Colors />
 	<Separator />
+	<Tooltips />
 	<!-- <Alltemp /> -->
 </main>

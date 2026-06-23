@@ -63,22 +63,24 @@
 				<p>{tooltip}</p>
 			{/if}
 			{#if extra}
-				{#each Object.entries(extra) as [key, item]}
-					{#if key === 'required' && item === true}
-						<Badge class="font-bold">{key}</Badge>
-					{:else if item === true}
-						<Badge class="font-bold">{key}</Badge>
-					{:else if typeof item === 'string'}
-						<Badge class="font-bold">{key}: {item}</Badge>
-					{:else if typeof item === 'object' && item !== null}
-						<Badge>
-							{#if item.showKey !== false}
-								<span class="font-bold">{key}:</span>
-							{/if}
-							{item.value === true ? '' : item.value}
-						</Badge>
-					{/if}
-				{/each}
+				<div class="flex flex-wrap gap-2">
+					{#each Object.entries(extra) as [key, item]}
+						{#if key === 'required' && item === true}
+							<Badge variant="outline" class="border-destructive/80 ">{key}</Badge>
+						{:else if item === true}
+							<Badge variant="outline" class="">{key}</Badge>
+						{:else if typeof item === 'string'}
+							<Badge variant="outline" class="">{item}</Badge>
+						{:else if typeof item === 'object' && item !== null}
+							<Badge variant="outline" class="">
+								{#if item.showKey !== false}
+									<span class="">{key}:</span>
+								{/if}
+								{item.value === true ? '' : item.value}
+							</Badge>
+						{/if}
+					{/each}
+				</div>
 			{/if}
 		</Tooltip.Content>
 	</Tooltip.Root>
