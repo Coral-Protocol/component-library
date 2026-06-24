@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.6](https://github.com/Coral-Protocol/component-library/compare/v2.4.5...v2.4.6) (2026-06-24)
+
+
+### Bug Fixes
+
+* border/input color match ([e80eb7d](https://github.com/Coral-Protocol/component-library/commit/e80eb7dabc9bd6c858f5ab8dcda65fc36c0f71d3))
+
 ## [2.4.5](https://github.com/Coral-Protocol/component-library/compare/v2.4.4...v2.4.5) (2026-06-23)
 
 
