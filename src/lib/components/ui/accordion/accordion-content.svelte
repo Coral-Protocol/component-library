@@ -9,12 +9,17 @@
 		mounted = true;
 	});
 
+	type Props = AccordionPrimitive.ContentProps & {
+		animate?: boolean;
+	};
+
 	let {
 		ref = $bindable(null),
 		class: className,
 		children,
+		animate,
 		...restProps
-	}: WithoutChild<AccordionPrimitive.ContentProps> = $props();
+	}: WithoutChild<Props> = $props();
 </script>
 
 <AccordionPrimitive.Content
@@ -22,7 +27,7 @@
 	data-slot="accordion-content"
 	class={cn(
 		'overflow-hidden px-2 text-xs/relaxed',
-		mounted && 'data-open:animate-accordion-down data-closed:animate-accordion-up'
+		animate && 'data-open:animate-accordion-down data-closed:animate-accordion-up'
 	)}
 	{...restProps}
 >
