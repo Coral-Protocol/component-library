@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.0](https://github.com/Coral-Protocol/component-library/compare/v2.4.6...v2.5.0) (2026-06-30)
+
+
+### Features
+
+* animation prop for accordions ([fdf7311](https://github.com/Coral-Protocol/component-library/commit/fdf7311a60a6253c8486a720f38ecc630f3cdf85))
+
 ## [2.4.6](https://github.com/Coral-Protocol/component-library/compare/v2.4.5...v2.4.6) (2026-06-24)
 
 
